@@ -34,13 +34,22 @@ BaudRateGenerator  BaudUnit(
 	.uartClock(SCL), 
 	.Reset(Reset),
 	.clock(clock),
-	.enable(enable),
+	.enable(BaudEnable),
 	.BaudRate(BaudRate),
 	.ClockFrequency(ClockFrequency));
 
 
-I2C_Controller  ControlUnit(Go, WriteLoad, ReadorWrite, ShiftorHold, Select, 
-	BaudEnable, StartStopAck, Reset, SCL, clock);
+I2C_Controller  ControlUnit(
+	.clock(clock),
+	.ClockI2C(SCL),,
+	.Go(G0),
+	.Reset(Reset),
+	.BaudEnable(BaudEnable),
+	.ReadorWrite(ReadorWrite),
+	.Select(Select),
+	.ShiftorHold(ShiftorHold),
+	.StartStopAck(StartStopAck),
+	.WriteLoad(WriteLoad));
 
 //module I2C_DataUnit (WriteLoad, ReadorWrite, ShiftorHold, Select, SentData, 
 //ReceivedData, SDA, StartStopAck, Reset, clock);
