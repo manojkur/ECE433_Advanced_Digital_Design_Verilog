@@ -30,7 +30,7 @@ Clock60MHz SystemClock(
 
 wire WriteLoad, ReadorWrite, ShiftorHold, Select, BaudEnable, StartStopAck;
 //module SquareWaveGenerator (WaveFrequency, ClockFrequency, StartStop, SignalOut, Reset, clock);
-I2C_BaudRateGenerator  BaudUnit(
+BaudRateGenerator  BaudUnit(
 	.uartClock(SCL), 
 	.Reset(Reset),
 	.clock(clock),
