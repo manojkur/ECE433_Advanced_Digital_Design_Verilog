@@ -39,7 +39,7 @@ BaudRateGenerator  BaudUnit(
 	.ClockFrequency(ClockFrequency));
 
 
-I2C_Controller  ControlUnit(
+ControlUnit  ControlUnit(
 	.clock(clock),
 	.ClockI2C(SCL),,
 	.Go(G0),
