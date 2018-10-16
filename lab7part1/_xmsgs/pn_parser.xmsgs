@@ -8,12 +8,6 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/ECE433_Advanced_Digital_Design_Verilog/lab7part1/ControlUnit.v&quot; into library work</arg>
-</msg>
-
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/ECE433_Advanced_Digital_Design_Verilog/lab7part1/ControlUnit.v</arg>&quot; Line <arg fmt="%d" index="2">12</arg>. <arg fmt="%s" index="3">Syntax error near &quot;)&quot;.</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/ECE433_Advanced_Digital_Design_Verilog/lab7part1/I2C_ShiftRegister.v&quot; into library work</arg>
 </msg>
 

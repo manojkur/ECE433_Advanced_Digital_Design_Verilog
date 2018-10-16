@@ -22,10 +22,89 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="lab7part1.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ShiftRegisterI2C_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ShiftRegisterI2C_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ShiftRegisterI2C_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1539719419" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1539719419">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1539719477" xil_pn:in_ck="-8125242198650341458" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1539719477">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="BaudRateGenerator.v"/>
+      <outfile xil_pn:name="BaudRateGeneratorI2C_tb.v"/>
+      <outfile xil_pn:name="ClockedNegativeOneShot.v"/>
+      <outfile xil_pn:name="ClockedPositiveOneShot.v"/>
+      <outfile xil_pn:name="ControlUnit.v"/>
+      <outfile xil_pn:name="I2C_ControllerI2C_tb.v"/>
+      <outfile xil_pn:name="I2C_DataUnit.v"/>
+      <outfile xil_pn:name="I2C_DataUnit_tb.v"/>
+      <outfile xil_pn:name="I2C_ShiftRegister.v"/>
+      <outfile xil_pn:name="I2C_ShiftRegister_tb.v"/>
+      <outfile xil_pn:name="I2C__SDAmodule_tb.v"/>
+      <outfile xil_pn:name="Lab7I2Cphase1fall2018JJS_JJS.v"/>
+      <outfile xil_pn:name="SquareWaveGenerator_tb.v"/>
+      <outfile xil_pn:name="lab7phase1overall2018fall_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1539719419" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5971922890703551699" xil_pn:start_ts="1539719419">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1539719419" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5478334042820307733" xil_pn:start_ts="1539719419">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1539719419" xil_pn:in_ck="4714685838324031976" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4596838804573580743" xil_pn:start_ts="1539719419">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/Clock60MHz.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1539719477" xil_pn:in_ck="6341916990767524386" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1539719477">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="BaudRateGenerator.v"/>
+      <outfile xil_pn:name="BaudRateGeneratorI2C_tb.v"/>
+      <outfile xil_pn:name="ClockedNegativeOneShot.v"/>
+      <outfile xil_pn:name="ClockedPositiveOneShot.v"/>
+      <outfile xil_pn:name="ControlUnit.v"/>
+      <outfile xil_pn:name="I2C_ControllerI2C_tb.v"/>
+      <outfile xil_pn:name="I2C_DataUnit.v"/>
+      <outfile xil_pn:name="I2C_DataUnit_tb.v"/>
+      <outfile xil_pn:name="I2C_ShiftRegister.v"/>
+      <outfile xil_pn:name="I2C_ShiftRegister_tb.v"/>
+      <outfile xil_pn:name="I2C__SDAmodule_tb.v"/>
+      <outfile xil_pn:name="Lab7I2Cphase1fall2018JJS_JJS.v"/>
+      <outfile xil_pn:name="SquareWaveGenerator_tb.v"/>
+      <outfile xil_pn:name="ipcore_dir/Clock60MHz.v"/>
+      <outfile xil_pn:name="lab7phase1overall2018fall_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1539719480" xil_pn:in_ck="6341916990767524386" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="548245983830976729" xil_pn:start_ts="1539719477">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ShiftRegisterI2C_tb_beh.prj"/>
+      <outfile xil_pn:name="ShiftRegisterI2C_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1539719480" xil_pn:in_ck="-8471287702610434587" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1808191436897329860" xil_pn:start_ts="1539719480">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ShiftRegisterI2C_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
     <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>

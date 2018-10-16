@@ -9,31 +9,31 @@ module I2C_ShiftRegister(WriteLoad, SentData, ReceivedData,ShiftIn,ShiftOut,Shif
 input CLOCK, Reset, ShiftIn, ShiftorHold, WriteLoad;
 input [7:0] SentData;
 output reg ShiftOut;
-output reg [7:0] RecievedData;
+output reg [7:0] ReceivedData;
 
-reg [7:0] newRecievedData;
+reg [7:0] newReceivedData;
 
 always @(posedge CLOCK or posedge Reset)
 	if(Reset)
 		begin
 			ShiftOut <= 0;
-			RecievedData <= 8'b00000000;
+			ReceivedData <= 8'b00000000;
 		end
 	else
 		begin
-			ShiftOut <= RecievedData[7];
+			ShiftOut <= newReceivedData[7];
 			ReceivedData <= newReceivedData;
 		end
 	
-always @(ShiftorLoad or WriteLoad)
+always @(ShiftorHold or WriteLoad)
 	if(WriteLoad)
-		ReceivedData <= SentData;
+		newReceivedData <= SentData;
 	else
 		begin
-			if(ShiftorLoad)
-				newRecievedData <= {RecievedData[6:0], ShiftIn};
+			if(ShiftorHold)
+				newReceivedData <= {ReceivedData[6:0], ShiftIn};
 			else
-				newRecievedData <= RecievedData;
+				newReceivedData <= ReceivedData;
 		end
 
 endmodule
