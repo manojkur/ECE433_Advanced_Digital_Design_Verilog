@@ -1,4 +1,4 @@
-module ControlUnit (
+module I2C_Controller (
 	input clock,
 	input ClockI2C,
 	input Go,
