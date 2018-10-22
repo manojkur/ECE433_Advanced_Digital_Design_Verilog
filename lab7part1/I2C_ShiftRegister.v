@@ -11,8 +11,6 @@ input [7:0] SentData;
 output reg ShiftOut;
 output reg [7:0] ReceivedData;
 
-reg [7:0] newReceivedData;
-
 always @(posedge CLOCK or posedge Reset)
 	if(Reset)
 		begin
@@ -21,19 +19,24 @@ always @(posedge CLOCK or posedge Reset)
 		end
 	else
 		begin
-			ShiftOut <= newReceivedData[7];
-			ReceivedData <= newReceivedData;
-		end
-	
-always @(ShiftorHold or WriteLoad)
-	if(WriteLoad)
-		newReceivedData <= SentData;
-	else
-		begin
-			if(ShiftorHold)
-				newReceivedData <= {ReceivedData[6:0], ShiftIn};
+			if(WriteLoad)
+				begin
+					ShiftOut <= SentData[7];
+					ReceivedData <= SentData;
+				end
 			else
-				newReceivedData <= ReceivedData;
+				begin
+					if(ShiftorHold)
+						begin
+							ShiftOut <= ReceivedData[6];
+							ReceivedData <= {ReceivedData[6:0], ShiftIn};
+						end
+					else
+						begin
+							ShiftOut <= ReceivedData[7];
+							ReceivedData <= ReceivedData;
+						end
+				end
 		end
 
 endmodule
