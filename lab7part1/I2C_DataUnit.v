@@ -22,10 +22,10 @@ wire ShiftDataIn, ShiftDataOut;
 I2C_ShiftRegister ShiftUnit(
 	.WriteLoad(WriteLoad), 
 	.SentData(SentData), 
-	.output(ReceivedData),
-	.input(ShiftDataIn), 
-	.output(ShiftDataOut),
-	.input(ShiftorHold),
+	.ReceivedData(ReceivedData),
+	.ShiftDataIn(ShiftDataIn), 
+	.ShiftDataOut(ShiftDataOut),
+	.ShiftorHold(ShiftorHold),
 	.Reset(Reset),
 	.CLOCK(clock));
 

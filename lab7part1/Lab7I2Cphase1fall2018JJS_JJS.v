@@ -27,7 +27,7 @@ wire clock;
 //Comment the following two lines before making bit stream file
 parameter BaudRate=30000, ClockFrequency=60000000;
 
-assign clock = clock_input
+assign clock = clock_input;
 // Clock60MHz SystemClock(
 // 	.CLK_IN1(clock_input),
 // 	.CLK_OUT1(clock),
