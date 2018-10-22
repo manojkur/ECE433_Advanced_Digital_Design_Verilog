@@ -20,21 +20,21 @@ parameter LENGTH = 8;
 //module I2C_ShiftRegister(WriteLoad, SentData, ReceivedData,ShiftIn,ShiftOut,ShiftorHold,Reset,CLOCK);
 wire ShiftDataIn, ShiftDataOut; 
 I2C_ShiftRegister ShiftUnit(
-	.(WriteLoad), 
-	.(SentData), 
-	.(ReceivedData),
-	.(ShiftDataIn), 
-	.(ShiftDataOut),
-	.(ShiftorHold),
+	.WriteLoad(WriteLoad), 
+	.SentData(SentData), 
+	.output(ReceivedData),
+	.input(ShiftDataIn), 
+	.output(ShiftDataOut),
+	.input(ShiftorHold),
 	.Reset(Reset),
-	.clock(clock));
+	.CLOCK(clock));
 
 //module I2C_SDAmodule(SDA, ReadorWrite, Select, StartStopAck, ShiftIn, ShiftOut);
 I2C_SDAmodule SDAUnit(
-	.(SDA), 
-	.(ReadorWrite), 
-	.(Select), 
-	.(StartStopAck), 
-	.(ShiftDataIn), 
-	.(ShiftDataOut));
+	.SDA(SDA), 
+	.ReadorWrite(ReadorWrite), 
+	.Select(Select), 
+	.StartStopAck(StartStopAck), 
+	.ShiftDataIn(ShiftDataIn), 
+	.ShiftDataOut(ShiftDataOut));
 endmodule 

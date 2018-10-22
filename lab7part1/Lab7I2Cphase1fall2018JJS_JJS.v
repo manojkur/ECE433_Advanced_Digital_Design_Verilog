@@ -10,8 +10,8 @@
 
 module Lab7I2Cphase1fall2018MK_LP(
 	input Go,
-	inout SCL,
-	output SDA,
+	inout SDA,
+	output SCL,
 	input Reset,
 	input clock_input,
 	output ClockLocked);
@@ -60,9 +60,16 @@ ControlUnit  ControlUnit(
 //ReceivedData, SDA, StartStopAck, Reset, clock);
 wire [7:0] ReceivedData;
 I2C_DataUnit DataUnit(
-	.(WriteLoad),
-	.(ReadorWrite), ShiftorHold, Select, FirstByte, 
-ReceivedData, SDA, StartStopAck, Reset, clock);
+	.WriteLoad(WriteLoad),
+	.ReadorWrite(ReadorWrite), 
+	.ShiftorHold(ShiftorHold), 
+	.Select(Select),
+	.SentData(FirstByte),
+	.ReceivedData(ReceivedData), 
+	.SDA(SDA),
+	.StartStopAck(StartStopAck),
+	.Reset(Reset),
+	.clock(clock));
 
 
 endmodule
