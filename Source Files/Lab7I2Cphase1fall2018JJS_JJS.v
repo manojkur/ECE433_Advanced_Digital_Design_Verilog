@@ -27,11 +27,11 @@ wire clock;
 //Comment the following two lines before making bit stream file
 parameter BaudRate=30000, ClockFrequency=60000000;
 
-assign clock = clock_input;
-// Clock60MHz SystemClock(
-// 	.CLK_IN1(clock_input),
-// 	.CLK_OUT1(clock),
-// 	.LOCKED(ClockLocked));
+//assign clock = clock_input;
+ Clock60Mhz SystemClock(
+ 	.CLK_IN1(clock_input),
+ 	.CLK_OUT1(clock),
+ 	.LOCKED(ClockLocked));
 
 wire WriteLoad, ReadorWrite, ShiftorHold, Select, BaudEnable, StartStopAck;
 //module SquareWaveGenerator (WaveFrequency, ClockFrequency, StartStop, SignalOut, Reset, clock);

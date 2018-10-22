@@ -1,10 +1,10 @@
-module I2C__SDAmodule (
+module I2C_SDAmodule (
 	inout SDA,
 	input ReadOrWrite,
 	input Select,
 	input StartStopAck,
 	output ShiftDataIn,
-	input ShiftDataOut));
+	input ShiftDataOut);
 
 
 
