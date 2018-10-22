@@ -136,7 +136,7 @@ module ControlUnit (
 				ReadorWrite		<=0;
 				WriteLoad		<=0;
 				Select			<=1;
-				ShiftorHold		<=     ;
+				ShiftorHold		<=!ClockI2C;
 				StartStopAck	<=0;
 				Count 			<= Count-1;
 				ClearTimer		<=1;
