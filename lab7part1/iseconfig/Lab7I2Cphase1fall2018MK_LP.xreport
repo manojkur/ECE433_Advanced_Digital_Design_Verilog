@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-10-16T15:10:22</DateModified>
+  <DateModified>2018-10-22T02:46:19</DateModified>
   <ModuleName>Lab7I2Cphase1fall2018MK_LP</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/ECE433_Advanced_Digital_Design_Verilog/lab7part1/iseconfig/Lab7I2Cphase1fall2018MK_LP.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/ECE433_Advanced_Digital_Design_Verilog/lab7part1</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/pakanalk/Documents/GitHub/ECE433_Advanced_Digital_Design_Verilog/lab7part1/iseconfig/Lab7I2Cphase1fall2018MK_LP.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/pakanalk/Documents/GitHub/ECE433_Advanced_Digital_Design_Verilog/lab7part1\</ImplementationReportsDirectory>
   <DateInitialized>2018-10-16T15:10:22</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

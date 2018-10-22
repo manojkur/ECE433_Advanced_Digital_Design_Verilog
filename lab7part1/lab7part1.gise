@@ -91,6 +91,7 @@
     <transform xil_pn:end_ts="1539719480" xil_pn:in_ck="6341916990767524386" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="548245983830976729" xil_pn:start_ts="1539719477">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <outfile xil_pn:name="ShiftRegisterI2C_tb_beh.prj"/>
       <outfile xil_pn:name="ShiftRegisterI2C_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -101,6 +102,7 @@
     <transform xil_pn:end_ts="1539719480" xil_pn:in_ck="-8471287702610434587" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1808191436897329860" xil_pn:start_ts="1539719480">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="ShiftRegisterI2C_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
