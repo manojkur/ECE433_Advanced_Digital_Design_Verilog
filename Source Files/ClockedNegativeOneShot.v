@@ -14,12 +14,13 @@ always@(State)
 	if(State==State1) OneShot<=1;
 	else OneShot<=0;
 
+
 always @ (posedge CLOCK)
 	if(Reset==1)	State <= 1; else
-	case (State)
-	0:	if (InputPulse==1) State<=State0; else State<=State1;
-	1:	if (InputPulse==1) State<=State0; else State<=State3;
-	2:	State<=State0;
-	3:	if (InputPulse==1) State<=State0; else State<=State3;
-	endcase
+		case (State)
+			0:	if (InputPulse==1) State<=State0; else State<=State1;
+			1:	if (InputPulse==1) State<=State0; else State<=State3;
+			2:	State<=State0;
+			3:	if (InputPulse==1) State<=State0; else State<=State3;
+		endcase
 endmodule

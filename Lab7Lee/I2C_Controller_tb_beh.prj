@@ -1,0 +1,5 @@
+verilog work "../Source Files/ClockedPositiveOneShot.v"
+verilog work "../Source Files/ClockedNegativeOneShot.v"
+verilog work "../Source Files/I2C_Controller.v"
+verilog work "../Source Files/I2C_ControllerI2C_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

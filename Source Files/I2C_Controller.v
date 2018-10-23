@@ -3,14 +3,22 @@ module I2C_Controller (
 	input ClockI2C,
 	input Go,
 	input Reset,
-	output BaudEnable,
-	output ReadorWrite,
-	output Select,
-	output ShiftorHold,
-	output StartStopAck,
-	output WriteLoad	
+	output reg BaudEnable,
+	output reg ReadorWrite,
+	output reg Select,
+	output reg ShiftorHold,
+	output reg StartStopAck,
+	output reg WriteLoad	
 );
 
+	wire OneShotNegative;
+	wire OneShotPositive;
+
+
+	ClockedNegativeOneShot OneShotNegativeUnit(ClockI2C, OneShotNegative, Reset, clock);
+	ClockedPositiveOneShot OneShotPositiveUnit(ClockI2C, OneShotPositive, Reset, clock); 
+
+	reg ACKbit;
 
 	reg [2:0] State;
 	parameter InitialState=3'd0, StartState=3'd1, LoadState=3'd2, WriteState=3'd3, AcknowledgeState=3'd4;
@@ -19,17 +27,18 @@ module I2C_Controller (
 
 	reg ClearTimer;
 	reg [2:0] NextState;
-	reg [3:0] Count;
+	reg [3:0] Count = 10;
 
-	reg TimeOut;
-	reg Done;
+	wire TimeOut;
+	assign TimeOut = OneShotNegative;
 
 	//switch state
-	always @(posedge clock, posedge reset) begin
-		if(reset) begin
+	always @(posedge clock, posedge Reset) begin
+		if(Reset) begin
 			State <= InitialState;
 		end else begin
 			State <= NextState;
+
 			// if(OneShotPositive==1)
 			// 	ACKbit <= SDA; 
 			// else 
@@ -38,12 +47,10 @@ module I2C_Controller (
 	end
 
 
-
-
-	//next state
-	always @(State, Go, ClockI2C, Count, TimeOut)begin
+	//next state and count
+	always @( State, Go, TimeOut, OneShotNegative, OneShotPositive)begin
 		case(State)
-			InitialState:
+			InitialState:begin
 				if(Go)
 					if(ClockI2C)
 						NextState <= StartState;
@@ -51,42 +58,73 @@ module I2C_Controller (
 						NextState <= InitialState;
 				else 
 					NextState <= InitialState;
+				Count <= 10;
+			end
 			
-			StartState:
+			StartState:begin
 				if(TimeOut)
 					NextState <= LoadState;
 				else
 					NextState <= StartState;
+				Count <= 10;
+			end
 
-			LoadState:
+			LoadState: begin
 				if(Count == 9)
 					NextState <= WriteState;
 				else
 					NextState <= LoadState;
 
-			WriteState:
+				if(OneShotNegative)
+					Count <= Count - 1'b1;
+				else 
+					Count <= Count;
+			end
+
+
+			WriteState: begin
 				if(Count == 1)
 					NextState <= AcknowledgeState;
 				else
 					NextState <= WriteState;
 
-			AcknowledgeState:
-				if(ClockI2C == 1)
-					NextState <= TransitState;
-				else
-					NextState <= AcknowledgeState;
+				if(OneShotNegative)
+					Count <= Count - 1'b1;
+				else 
+					Count <= Count;
+			end
 
-			TransitState:
+			AcknowledgeState: begin
+				// if(Count == 2)
+				// 	NextState <= TransitState;
+				// else
+				// 	NextState <= AcknowledgeState;
+
+				Count <= 10;
+
+				if(OneShotPositive)
+					NextState <= TransitState;
+					// Count <= Count - 1'b1;
+				else 
+					NextState <= AcknowledgeState;
+					// Count <= Count;
+			end
+
+			TransitState: begin
 				if(TimeOut == 1)
 					NextState <= StopState;
 				else
 					NextState <= TransitState;
+				Count <= 10;
+			end
 
-			StopState:
+			StopState: begin
 				if(TimeOut == 1)
 					NextState <= InitialState;
 				else
 					NextState <= StopState;
+				Count <= 10;
+			end
 
 			default:
 				NextState <= InitialState;
@@ -105,7 +143,6 @@ module I2C_Controller (
 				Select			<= 0;				
 				ShiftorHold 	<= 0;
 				StartStopAck 	<= 0;
-				Count 			<= 10;
 				ClearTimer 		<= 1;
 			end
 
@@ -116,7 +153,6 @@ module I2C_Controller (
 				Select			<=	0;
 				ShiftorHold		<=	0;
 				StartStopAck	<=	0;
-				Count			<=	10;
 				ClearTimer		<=	0;
 			end
 
@@ -127,7 +163,6 @@ module I2C_Controller (
 				Select			<=0;
 				ShiftorHold		<=0;
 				StartStopAck	<=1;
-				Count 			<= Count-1;
 				ClearTimer		<=1;
 			end 
 
@@ -136,9 +171,8 @@ module I2C_Controller (
 				ReadorWrite		<=0;
 				WriteLoad		<=0;
 				Select			<=1;
-				ShiftorHold		<=!ClockI2C;
+				ShiftorHold		<=OneShotNegative;
 				StartStopAck	<=0;
-				Count 			<= Count-1;
 				ClearTimer		<=1;
 			end
 
@@ -149,7 +183,6 @@ module I2C_Controller (
 				Select			<=0;
 				ShiftorHold		<=0;
 				StartStopAck	<=0;
-				Count 			<=10;
 				ClearTimer		<=1;
 			end 
 
@@ -160,7 +193,6 @@ module I2C_Controller (
 				Select			<=0;
 				ShiftorHold		<=0;
 				StartStopAck	<=0;
-				Count 			<=10;
 				ClearTimer		<=0;
 			end 
 
@@ -171,7 +203,6 @@ module I2C_Controller (
 				Select			<=0;
 				ShiftorHold		<=0;
 				StartStopAck	<=1;
-				Count 			<=10;
 				ClearTimer		<=0;
 			end 
 
@@ -182,7 +213,6 @@ module I2C_Controller (
 				Select			<=0;
 				ShiftorHold		<=0;
 				StartStopAck	<=0;
-				Count 			<=0;
 				ClearTimer		<=0;
 			end 
 
