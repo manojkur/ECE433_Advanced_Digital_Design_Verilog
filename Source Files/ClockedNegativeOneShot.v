@@ -1,6 +1,8 @@
-// File name	: ClockedNegativeOneShot.v
-// Written by	: Jianjian Song
-// Negative one shot
+//File Name: ClockedNegativeOneShot.v
+//Author: Manoj Kurapati and Leela Pakanati
+//Date: October 16, 2018
+//ECE433 Fall 2018
+//Phase 1 of Lab #7 I2C driver and TMP101 temperature sensor
 `timescale 1ns / 1ps
 
 module ClockedNegativeOneShot(InputPulse, OneShot, Reset, CLOCK) ;

@@ -1,10 +1,8 @@
 //File Name: BaudRateGenerator.v
-//Author: Jianjian Song
-//Date: March 2013
-//ECE333, Spring 2013
-//Inputs: Baud Rate in BaudRate, System Clock Frequency in ClockFrequency
-//Output: uartClock, a clock that is 16 times faster than the uart bit speed
-//-------------------------------------------------------------------
+//Author: Manoj Kurapati and Leela Pakanati
+//Date: October 16, 2018
+//ECE433 Fall 2018
+//Phase 1 of Lab #7 I2C driver and TMP101 temperature sensor
 
 module BaudRateGenerator (uartClock, Reset, clock, enable, BaudRate, ClockFrequency);
 input Reset, clock;
