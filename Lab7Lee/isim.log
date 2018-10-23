@@ -7,8 +7,6 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 
 ----------------------------------------------------------------------
 This is a Full version of ISim.
-WARNING:  For instance uut/BaudUnit/, width 20 of formal port BaudRate is not equal to width 32 of actual constant.
-WARNING:  For instance uut/BaudUnit/, width 30 of formal port ClockFrequency is not equal to width 32 of actual constant.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -16,26 +14,9 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 Stopped at time : 600 ns :  in File "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Source Files/lab7phase1overall2018fall_tb.v" Line 24 
-ISim P.20131013 (signature 0x7708f090)
-----------------------------------------------------------------------
-WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
-
-
-----------------------------------------------------------------------
-This is a Full version of ISim.
-WARNING:  For instance uut/BaudUnit/, width 20 of formal port BaudRate is not equal to width 32 of actual constant.
-WARNING:  For instance uut/BaudUnit/, width 30 of formal port ClockFrequency is not equal to width 32 of actual constant.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 600 ns :  in File "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Source Files/lab7phase1overall2018fall_tb.v" Line 24 
-# run 1.00ms
-# run 1.00ms
-# run 1.00ms
-# run 1.00ms
-# restart
-# run 1.00ms
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 600 ns :  in File "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Source Files/lab7phase1overall2018fall_tb.v" Line 24 
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
 # run 1.00ms

@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Oct 23 02:34:50 2018
+# Process ID: 16892
+# Log file: C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -1392 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/pa.fromNetlist.tcl}
+# create_project -name Lab7Lee -dir "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/planAhead_run_2" -part xc6slx16csg324-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/Lab7I2Cphase1fall2018MK_LP.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee} {ipcore_dir} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "Lab7I2Cphase1fall2018MK_LP.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/Lab7I2Cphase1fall2018MK_LP.ucf' to fileset 'constrs_1'
+# add_files [list {Lab7I2Cphase1fall2018MK_LP.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-3
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Lab7I2Cphase1fall2018MK_LP.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   Lab7I2Cphase1fall2018MK_LP.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Lab7I2Cphase1fall2018MK_LP.edif ...
+ngc2edif: Total memory usage is 115288 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/Lab7Lee.data/cache/Lab7I2Cphase1fall2018MK_LP_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/Lab7Lee.data/cache/Lab7I2Cphase1fall2018MK_LP_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/Lab7I2Cphase1fall2018MK_LP.ucf]
+Finished Parsing UCF File [C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/Lab7I2Cphase1fall2018MK_LP.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (OBUFT, IBUF): 1 instances
+
+Phase 0 | Netlist Checksum: baf1ea11
+link_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 491.953 ; gain = 90.527
+startgroup
+set_property package_pin V16 [get_ports SCL]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list clock_input]]
+set_property iostandard LVCMOS25 [get_ports [list ClockLocked]]
+set_property iostandard LVCMOS33 [get_ports [list ClockLocked]]
+set_property iostandard LVCMOS33 [get_ports [list Go]]
+set_property iostandard LVCMOS33 [get_ports [list Reset]]
+set_property iostandard LVCMOS33 [get_ports [list SCL]]
+save_constraints
+set_property iostandard LVCMOS33 [get_ports [list SDA]]
+save_constraints
+startgroup
+set_property package_pin V10 [get_ports clock_input]
+endgroup
+startgroup
+set_property package_pin L4 [get_ports SCL]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports SDA]
+endgroup
+save_constraints

@@ -1,0 +1,19 @@
+
+
+NET "Go" LOC = T10;
+NET "SDA" LOC = L3;
+NET "clock_input" LOC = V10;
+NET "Reset" LOC = C9;
+
+# PlanAhead Generated IO constraints 
+
+NET "clock_input" IOSTANDARD = LVCMOS33;
+NET "ClockLocked" IOSTANDARD = LVCMOS33;
+NET "Go" IOSTANDARD = LVCMOS33;
+NET "Reset" IOSTANDARD = LVCMOS33;
+NET "SCL" IOSTANDARD = LVCMOS33;
+NET "SDA" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "SCL" LOC = L4;

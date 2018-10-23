@@ -17,22 +17,21 @@ module Lab7I2Cphase1fall2018MK_LP(
 	output ClockLocked);
 
 //send this byte as address
-parameter FirstByte=8'b10010001;
+parameter FirstByte=8'b10010011;
 
 //30kHz I2C speed at 60MHz clock
-//parameter BaudRate=20'd30000, ClockFrequency=30'd60000000;
+parameter BaudRate=20'd30000, ClockFrequency=30'd60000000;
 wire clock;
 
 //These are simulation parameters. 
 //Comment the following two lines before making bit stream file
-parameter BaudRate=5, ClockFrequency=50;
 
-assign clock = clock_input;
-/* Clock60Mhz SystemClock(
+// assign clock = clock_input;
+Clock60Mhz SystemClock(
  	.CLK_IN1(clock_input),
  	.CLK_OUT1(clock),
  	.LOCKED(ClockLocked));
-*/
+
 wire WriteLoad, ReadOrWrite, ShiftorHold, Select, BaudEnable, StartStopAck;
 //module SquareWaveGenerator (WaveFrequency, ClockFrequency, StartStop, SignalOut, Reset, clock);
 BaudRateGenerator  BaudUnit(

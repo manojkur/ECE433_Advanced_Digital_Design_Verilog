@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="Go" Dir="IN"/>
+		<Port Id="Reset" Dir="IN"/>
+		<Port Id="clock_input" Dir="IN"/>
+		<Port Id="SDA" Dir="INOUT"/>
+		<Port Id="SCL" Dir="OUT"/>
+		<Port Id="ClockLocked" Dir="OUT"/>
+	</Ifc>
+</Interface>
+
