@@ -1,22 +1,35 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/I2C_Controller_tb_isim_beh.exe -prj C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/I2C_Controller_tb_beh.prj work.I2C_Controller_tb work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/lab7phase1overall_isim_beh.exe -prj C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/lab7phase1overall_beh.prj work.lab7phase1overall work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/I2C_ShiftRegister.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/I2C_SDAmodule.v" into library work
 Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/ClockedPositiveOneShot.v" into library work
 Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/ClockedNegativeOneShot.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/I2C_DataUnit.v" into library work
 Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/I2C_Controller.v" into library work
-Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/I2C_ControllerI2C_tb.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/BaudRateGenerator.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/Lab7I2Cphase1fall2018JJS_JJS.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/lab7phase1overall2018fall_tb.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/Lab7I2Cphase1fall2018JJS_JJS.v" Line 43: Size mismatch in connection of port <BaudRate>. Formal port size is 20-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/Lab7I2Cphase1fall2018JJS_JJS.v" Line 44: Size mismatch in connection of port <ClockFrequency>. Formal port size is 30-bit while actual signal size is 32-bit.
 Completed static elaboration
+Compiling module BaudRateGenerator
 Compiling module ClockedNegativeOneShot
 Compiling module ClockedPositiveOneShot
 Compiling module I2C_Controller
-Compiling module I2C_Controller_tb
+Compiling module I2C_ShiftRegister
+Compiling module I2C_SDAmodule
+Compiling module I2C_DataUnit
+Compiling module Lab7I2Cphase1fall2018MK_LP
+Compiling module lab7phase1overall
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Compiled 5 Verilog Units
-Built simulation executable C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/I2C_Controller_tb_isim_beh.exe
-Fuse Memory Usage: 27360 KB
-Fuse CPU Usage: 437 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 10 Verilog Units
+Built simulation executable C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/lab7phase1overall_isim_beh.exe
+Fuse Memory Usage: 28224 KB
+Fuse CPU Usage: 436 ms

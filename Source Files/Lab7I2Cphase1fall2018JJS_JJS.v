@@ -49,7 +49,7 @@ I2C_Controller  ControlUnit(
 	.ClockI2C(SCL),
 	.Go(Go),
 	.Reset(Reset),
-	.BaudRate(BaudRate),
+	.BaudEnable(BaudEnable),
 	.ReadOrWrite(ReadOrWrite),
 	.Select(Select),
 	.ShiftorHold(ShiftorHold),

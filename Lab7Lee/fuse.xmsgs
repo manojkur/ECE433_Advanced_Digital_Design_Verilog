@@ -5,5 +5,11 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/Lab7I2Cphase1fall2018JJS_JJS.v" Line 43: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">BaudRate</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/../Source Files/Lab7I2Cphase1fall2018JJS_JJS.v" Line 44: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">ClockFrequency</arg>&gt;. Formal port size is <arg fmt="%d" index="2">30</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
 </messages>
 
