@@ -1,15 +1,14 @@
-module I2C_Controller (
+module I2C_Controller(
 	input clock,
 	input ClockI2C,
 	input Go,
 	input Reset,
 	output reg BaudEnable,
-	output reg ReadorWrite,
+	output reg ReadOrWrite,
 	output reg Select,
 	output reg ShiftorHold,
 	output reg StartStopAck,
-	output reg WriteLoad	
-);
+	output reg WriteLoad);
 
 	wire OneShotNegative;
 	wire OneShotPositive;
@@ -24,31 +23,43 @@ module I2C_Controller (
 	parameter InitialState=3'd0, StartState=3'd1, LoadState=3'd2, WriteState=3'd3, AcknowledgeState=3'd4;
 	parameter TransitState=3'd5, StopState=3'd6; 
 
-
 	reg ClearTimer;
-	reg [2:0] NextState;
+
+	reg [2:0] NextState = 0;
 	reg [3:0] Count = 10;
 
-	wire TimeOut;
-	assign TimeOut = OneShotNegative;
+	reg TimeOut;
+	reg [15:0] delayTime = 0;
 
 	//switch state
 	always @(posedge clock, posedge Reset) begin
-		if(Reset) begin
+		if(Reset) 
 			State <= InitialState;
-		end else begin
+		else begin
 			State <= NextState;
-
-			// if(OneShotPositive==1)
-			// 	ACKbit <= SDA; 
-			// else 
-			// 	ACKbit <= ACKbit;
 		end
+	end
+
+	initial begin
+		ShiftorHold <= 0;
+		ReadOrWrite <= 0;		
+	end 
+
+	always @(posedge clock) begin
+		if(ClearTimer | (delayTime>=4))
+			delayTime<=0;
+		else
+			delayTime<=delayTime+1;
+
+		if(delayTime == 4) begin
+			TimeOut <= 1'b1;
+		end else
+			TimeOut<= 1'b0;
 	end
 
 
 	//next state and count
-	always @( State, Go, TimeOut, OneShotNegative, OneShotPositive)begin
+	always @(State, Go, TimeOut, OneShotNegative, OneShotPositive)begin
 		case(State)
 			InitialState:begin
 				if(Go)
@@ -88,10 +99,13 @@ module I2C_Controller (
 				else
 					NextState <= WriteState;
 
-				if(OneShotNegative)
+				if(OneShotNegative) begin
+					ShiftorHold <= 1;
 					Count <= Count - 1'b1;
-				else 
+				end else begin
+					ShiftorHold <= 0;
 					Count <= Count;
+				end 
 			end
 
 			AcknowledgeState: begin
@@ -99,7 +113,6 @@ module I2C_Controller (
 				// 	NextState <= TransitState;
 				// else
 				// 	NextState <= AcknowledgeState;
-
 				Count <= 10;
 
 				if(OneShotPositive)
@@ -137,83 +150,75 @@ module I2C_Controller (
 	always @(State)begin
 		case(State)
 			InitialState: begin
-				BaudEnable 		<= 0;
-				ReadorWrite 	<= 0;
-				WriteLoad 		<= 0;
-				Select			<= 0;				
-				ShiftorHold 	<= 0;
-				StartStopAck 	<= 0;
-				ClearTimer 		<= 1;
+				BaudEnable 		<=	0;
+				ReadOrWrite 	<=	0;
+				WriteLoad 		<=	0;
+				Select			<=	0;
+				StartStopAck 	<=	1;
+				ClearTimer		<=	1;
 			end
 
 			StartState: begin
 				BaudEnable		<=	0;
-				ReadorWrite		<=	0;
+				ReadOrWrite		<=	0;
 				WriteLoad		<=	0;
 				Select			<=	0;
-				ShiftorHold		<=	0;
 				StartStopAck	<=	0;
-				ClearTimer		<=	0;
+				ClearTimer		<= 	0;
 			end
 
 			LoadState: begin
-				BaudEnable		<=1;
-				ReadorWrite		<=0;
-				WriteLoad		<=1;
-				Select			<=0;
-				ShiftorHold		<=0;
-				StartStopAck	<=1;
-				ClearTimer		<=1;
+				BaudEnable		<=	1;
+				ReadOrWrite		<=	0;
+				WriteLoad		<=	1;
+				Select			<=	0;
+				StartStopAck	<=	0;
+				ClearTimer		<=	1;
 			end 
 
 			WriteState:	begin
-				BaudEnable		<=1;
-				ReadorWrite		<=0;
-				WriteLoad		<=0;
-				Select			<=1;
-				ShiftorHold		<=OneShotNegative;
-				StartStopAck	<=0;
-				ClearTimer		<=1;
+				BaudEnable		<=	1;
+				ReadOrWrite		<=	0;
+				WriteLoad		<=	0;
+				Select			<=	1;
+				StartStopAck	<=	0;
+				ClearTimer		<=	1;
 			end
 
 			AcknowledgeState: begin
-				BaudEnable		<=1;
-				ReadorWrite		<=1;
-				WriteLoad		<=0;
-				Select			<=0;
-				ShiftorHold		<=0;
-				StartStopAck	<=0;
-				ClearTimer		<=1;
+				BaudEnable		<=	1;
+				ReadOrWrite		<=	1;
+				WriteLoad		<=	0;
+				Select			<=	0;
+				StartStopAck	<=	0;
+				ClearTimer		<=	1;
 			end 
 
 			TransitState: begin
-				BaudEnable		<=0;
-				ReadorWrite		<=0;
-				WriteLoad		<=0;
-				Select			<=0;
-				ShiftorHold		<=0;
-				StartStopAck	<=0;
-				ClearTimer		<=0;
+				BaudEnable		<=	0;
+				ReadOrWrite		<=	0;
+				WriteLoad		<=	0;
+				Select			<=	0;
+				StartStopAck	<=	0;
+				ClearTimer		<=	0;
 			end 
 
 			StopState:begin 
-				BaudEnable		<=0;
-				ReadorWrite		<=0;
-				WriteLoad		<=0;
-				Select			<=0;
-				ShiftorHold		<=0;
-				StartStopAck	<=1;
-				ClearTimer		<=0;
+				BaudEnable		<=	0;
+				ReadOrWrite		<=	0;
+				WriteLoad		<=	0;
+				Select			<=	0;
+				StartStopAck	<=	1;
+				ClearTimer		<=	0;
 			end 
 
 			default: begin
-				BaudEnable		<=0;
-				ReadorWrite		<=0;
-				WriteLoad		<=0;
-				Select			<=0;
-				ShiftorHold		<=0;
-				StartStopAck	<=0;
-				ClearTimer		<=0;
+				BaudEnable		<=	0;
+				ReadOrWrite		<=	0;
+				WriteLoad		<=	0;
+				Select			<=	0;
+				StartStopAck	<=	0;
+				ClearTimer		<=	0;
 			end 
 
 		endcase // State

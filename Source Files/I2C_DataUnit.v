@@ -6,11 +6,11 @@
 //Phase 1 of Lab #7 I2C driver and TMP101 temperature sensor
 module I2C_DataUnit (
 	input WriteLoad, 
-	input ReadorWrite, 
+	input ReadOrWrite, 
 	input ShiftorHold, 
 	input Select, 
-	input [Length-1:0] SentData,
-	output [length-1:0] ReceivedData,
+	input [LENGTH-1:0] SentData,
+	output [LENGTH-1:0] ReceivedData,
 	inout SDA,
 	input StartStopAck,
 	input Reset,
@@ -23,8 +23,8 @@ I2C_ShiftRegister ShiftUnit(
 	.WriteLoad(WriteLoad), 
 	.SentData(SentData), 
 	.ReceivedData(ReceivedData),
-	.ShiftDataIn(ShiftDataIn), 
-	.ShiftDataOut(ShiftDataOut),
+	.ShiftIn(ShiftDataIn), 
+	.ShiftOut(ShiftDataOut),
 	.ShiftorHold(ShiftorHold),
 	.Reset(Reset),
 	.CLOCK(clock));
@@ -32,7 +32,7 @@ I2C_ShiftRegister ShiftUnit(
 //module I2C_SDAmodule(SDA, ReadorWrite, Select, StartStopAck, ShiftIn, ShiftOut);
 I2C_SDAmodule SDAUnit(
 	.SDA(SDA), 
-	.ReadorWrite(ReadorWrite), 
+	.ReadOrWrite(ReadOrWrite), 
 	.Select(Select), 
 	.StartStopAck(StartStopAck), 
 	.ShiftDataIn(ShiftDataIn), 

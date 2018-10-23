@@ -11,7 +11,7 @@ input Reset, clock;
 input [19:0] BaudRate;  //up to 1,000,000
 input [29:0] ClockFrequency; //up to 1GHz
 input enable;
-output reg  uartClock; 
+output reg  uartClock = 1; 
 reg [15:0] 	baud_count;
 
  always @(posedge clock)
@@ -20,13 +20,12 @@ reg [15:0] 	baud_count;
 					end
 	//	else if (baud_count == 8) 
 	else if(enable)
-		if (baud_count == ClockFrequency/(BaudRate*16)) begin
-			baud_count <= 1'b0;
-			uartClock <= 1'b1;
+		if (baud_count == ClockFrequency/(BaudRate*2)) begin
+			baud_count <= 1'b1;
+			uartClock <= !uartClock;
 		end else begin
 					baud_count <= baud_count + 1'b1;
-					uartClock <= 1'b0;
 			end
 	else
-		uartClock <= 1'b0;
+		uartClock <= 1'b1;
 endmodule

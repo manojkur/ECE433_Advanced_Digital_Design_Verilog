@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/I2C_Controller_tb_isim_beh.exe" -prj "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/I2C_Controller_tb_beh.prj" "work.I2C_Controller_tb" "work.glbl" 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/I2C_Controller_tb_isim_beh.exe -prj C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/I2C_Controller_tb_beh.prj work.I2C_Controller_tb work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -18,5 +18,5 @@ Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 5 Verilog Units
 Built simulation executable C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/I2C_Controller_tb_isim_beh.exe
-Fuse Memory Usage: 27988 KB
-Fuse CPU Usage: 499 ms
+Fuse Memory Usage: 27360 KB
+Fuse CPU Usage: 437 ms

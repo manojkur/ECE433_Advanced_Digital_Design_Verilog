@@ -9,8 +9,8 @@ module I2C_Controller_tb;
 	wire [2:0] State=uut.State;
 	wire [3:0] DataCounter = uut.Count;
 	wire TimeOut = uut.TimeOut;
-	// wire OneShotI2Cnegative = uut.OneShotI2Cnegative;
-	// wire OneShotI2Cpostive = uut.OneShotI2Cpositive;
+	wire OneShotI2Cnegative = uut.OneShotNegative;
+	wire OneShotI2Cpostive = uut.OneShotPositive;
 
 	I2C_Controller uut (
 		.clock(clock),
@@ -18,7 +18,7 @@ module I2C_Controller_tb;
 		.Go(Go),
 		.Reset(Reset),
 		.BaudEnable(BaudEnable),
-		.ReadorWrite(ReadorWrite),
+		.ReadOrWrite(ReadorWrite),
 		.Select(Select),
 		.ShiftorHold(ShiftorHold),
 		.StartStopAck(StartStopAck),

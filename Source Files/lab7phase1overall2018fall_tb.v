@@ -9,12 +9,12 @@ module lab7phase1overall;
 	// Bidirs
 	wire SDA;
 	wire [2:0] State=uut.ControlUnit.State;
-	wire OneShotI2Cnegative=uut.ControlUnit.OneShotI2Cnegative;
-	wire OneShotI2Cpositive=uut.ControlUnit.OneShotI2Cpositive;	
-	wire [3:0] count=uut.ControlUnit.DataCounter;
+	wire OneShotI2Cnegative=uut.ControlUnit.OneShotNegative;
+	wire OneShotI2Cpositive=uut.ControlUnit.OneShotPositive;	
+	wire [3:0] count=uut.ControlUnit.Count;
 //module Lab7I2Cphase1fall2018JJS_JJS(Go, SCL, SDA, Reset, clock, ClockLocked);
 	// Instantiate the Unit Under Test (UUT)
-	Lab7I2Cphase1fall2018JJS_JJS uut (Go, SCL, SDA, Reset, clock, ClockLocked);
+	Lab7I2Cphase1fall2018MK_LP uut (Go, SDA, SCL, Reset, clock, ClockLocked);
 
 	initial begin Go = 0;  Reset = 0;  clock = 0; end
 	always #2 clock=~clock;

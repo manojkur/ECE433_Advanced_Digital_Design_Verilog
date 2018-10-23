@@ -25,15 +25,15 @@ wire clock;
 
 //These are simulation parameters. 
 //Comment the following two lines before making bit stream file
-parameter BaudRate=30000, ClockFrequency=60000000;
+parameter BaudRate=5, ClockFrequency=50;
 
-//assign clock = clock_input;
- Clock60Mhz SystemClock(
+assign clock = clock_input;
+/* Clock60Mhz SystemClock(
  	.CLK_IN1(clock_input),
  	.CLK_OUT1(clock),
  	.LOCKED(ClockLocked));
-
-wire WriteLoad, ReadorWrite, ShiftorHold, Select, BaudEnable, StartStopAck;
+*/
+wire WriteLoad, ReadOrWrite, ShiftorHold, Select, BaudEnable, StartStopAck;
 //module SquareWaveGenerator (WaveFrequency, ClockFrequency, StartStop, SignalOut, Reset, clock);
 BaudRateGenerator  BaudUnit(
 	.uartClock(SCL), 
@@ -46,11 +46,11 @@ BaudRateGenerator  BaudUnit(
 
 I2C_Controller  ControlUnit(
 	.clock(clock),
-	.ClockI2C(SCL),,
-	.Go(G0),
+	.ClockI2C(SCL),
+	.Go(Go),
 	.Reset(Reset),
-	.BaudEnable(BaudEnable),
-	.ReadorWrite(ReadorWrite),
+	.BaudRate(BaudRate),
+	.ReadOrWrite(ReadOrWrite),
 	.Select(Select),
 	.ShiftorHold(ShiftorHold),
 	.StartStopAck(StartStopAck),
@@ -61,7 +61,7 @@ I2C_Controller  ControlUnit(
 wire [7:0] ReceivedData;
 I2C_DataUnit DataUnit(
 	.WriteLoad(WriteLoad),
-	.ReadorWrite(ReadorWrite), 
+	.ReadOrWrite(ReadOrWrite), 
 	.ShiftorHold(ShiftorHold), 
 	.Select(Select),
 	.SentData(FirstByte),

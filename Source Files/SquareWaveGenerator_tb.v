@@ -13,8 +13,8 @@ module SquareWaveGenerator_tb;
 	wire ClockI2C;
 
 //SquareWaveGenerator (WaveFrequency, ClockFrequency, StartStop, SignalOut, Reset, clock, );
-	I2C_BaudRateGenerator uut (BaudRate,ClockFrequency,Enable,ClockI2C,Reset,clock);
-	
+	BaudRateGenerator uut (ClockI2C,Reset, clock, Enable, BaudRate,ClockFrequency);
+		
 	initial begin  Enable = 0;  Reset = 0;  clock = 0;  BaudRate = 2;  ClockFrequency = 10; end
 	always #4 clock = ~ clock;
 	
