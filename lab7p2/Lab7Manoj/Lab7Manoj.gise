@@ -41,21 +41,12 @@
     <transform xil_pn:end_ts="1540256144" xil_pn:in_ck="-2935381574346723473" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1540256144">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../Source Files/BaudRateGenerator.v"/>
-      <outfile xil_pn:name="../Source Files/BaudRateGeneratorI2C_tb.v"/>
-      <outfile xil_pn:name="../Source Files/ClockedNegativeOneShot.v"/>
-      <outfile xil_pn:name="../Source Files/ClockedPositiveOneShot.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_Controller.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_ControllerI2C_tb.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_DataUnit.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_DataUnit_tb.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_SDAmodule.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_ShiftRegister.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_ShiftRegister_tb.v"/>
-      <outfile xil_pn:name="../Source Files/I2C__SDAmodule_tb.v"/>
-      <outfile xil_pn:name="../Source Files/Lab7I2Cphase1fall2018JJS_JJS.v"/>
-      <outfile xil_pn:name="../Source Files/SquareWaveGenerator_tb.v"/>
-      <outfile xil_pn:name="../Source Files/lab7phase1overall2018fall_tb.v"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1540256144" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8414769503488379382" xil_pn:start_ts="1540256144">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -68,44 +59,38 @@
     <transform xil_pn:end_ts="1540256144" xil_pn:in_ck="4714685839576364552" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4596838804573580743" xil_pn:start_ts="1540256144">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="InputAdded"/>
       <outfile xil_pn:name="ipcore_dir/Clock60Mhz.v"/>
     </transform>
     <transform xil_pn:end_ts="1540256144" xil_pn:in_ck="-96053758975601181" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1540256144">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../Source Files/BaudRateGenerator.v"/>
-      <outfile xil_pn:name="../Source Files/BaudRateGeneratorI2C_tb.v"/>
-      <outfile xil_pn:name="../Source Files/ClockedNegativeOneShot.v"/>
-      <outfile xil_pn:name="../Source Files/ClockedPositiveOneShot.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_Controller.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_ControllerI2C_tb.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_DataUnit.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_DataUnit_tb.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_SDAmodule.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_ShiftRegister.v"/>
-      <outfile xil_pn:name="../Source Files/I2C_ShiftRegister_tb.v"/>
-      <outfile xil_pn:name="../Source Files/I2C__SDAmodule_tb.v"/>
-      <outfile xil_pn:name="../Source Files/Lab7I2Cphase1fall2018JJS_JJS.v"/>
-      <outfile xil_pn:name="../Source Files/SquareWaveGenerator_tb.v"/>
-      <outfile xil_pn:name="../Source Files/lab7phase1overall2018fall_tb.v"/>
-      <outfile xil_pn:name="ipcore_dir/Clock60Mhz.v"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1540256146" xil_pn:in_ck="-96053758975601181" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2699249409034115725" xil_pn:start_ts="1540256144">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="SDAmodule_tb_beh.prj"/>
-      <outfile xil_pn:name="SDAmodule_tb_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1540256147" xil_pn:in_ck="-4597273660813964254" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8088987038815139114" xil_pn:start_ts="1540256146">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="SDAmodule_tb_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
       <status xil_pn:value="SuccessfullyRun"/>

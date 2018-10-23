@@ -8,13 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/ECE433_Advanced_Digital_Design_Verilog/Source Files/ClockedNegativeOneShot.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/ECE433_Advanced_Digital_Design_Verilog/Source Files/I2C_Controller.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/ECE433_Advanced_Digital_Design_Verilog/Source Files/I2C_ControllerI2C_tb.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/New folder/ECE433_Advanced_Digital_Design_Verilog/lab7p2/Source Files/Lab7Phase2I2C2018fallJJS_JJS.v&quot; into library work</arg>
 </msg>
 
 </messages>
