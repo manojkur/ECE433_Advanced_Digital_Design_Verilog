@@ -1,0 +1,812 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Lab7I2Cphase1fall2018MK_LP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Lab7I2Cphase1fall2018MK_LP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Lab7I2Cphase1fall2018MK_LP"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Lab7I2Cphase1fall2018MK_LP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\I2C_ShiftRegister.v" into library work
+Parsing module <I2C_ShiftRegister>.
+Analyzing Verilog file "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\I2C_SDAmodule.v" into library work
+Parsing module <I2C_SDAmodule>.
+Analyzing Verilog file "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\ClockedPositiveOneShot.v" into library work
+Parsing module <ClockedPositiveOneShot>.
+Analyzing Verilog file "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\ClockedNegativeOneShot.v" into library work
+Parsing module <ClockedNegativeOneShot>.
+Analyzing Verilog file "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\I2C_DataUnit.v" into library work
+Parsing module <I2C_DataUnit>.
+Analyzing Verilog file "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\I2C_Controller.v" into library work
+Parsing module <I2C_Controller>.
+Analyzing Verilog file "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\BaudRateGenerator.v" into library work
+Parsing module <BaudRateGenerator>.
+Analyzing Verilog file "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\Lab7I2Cphase1fall2018JJS_JJS.v" into library work
+Parsing module <Lab7I2Cphase1fall2018MK_LP>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Lab7I2Cphase1fall2018MK_LP>.
+
+Elaborating module <ClockedPositiveOneShot>.
+
+Elaborating module <BaudRateGenerator>.
+
+Elaborating module <I2C_Controller>.
+
+Elaborating module <ClockedNegativeOneShot>.
+WARNING:HDLCompiler:413 - "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\I2C_Controller.v" Line 70: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\I2C_Controller.v" Line 71: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <I2C_DataUnit>.
+
+Elaborating module <I2C_ShiftRegister>.
+
+Elaborating module <I2C_SDAmodule>.
+WARNING:HDLCompiler:1127 - "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\Lab7I2Cphase1fall2018JJS_JJS.v" Line 70: Assignment to ReceivedData ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Lab7I2Cphase1fall2018MK_LP>.
+    Related source file is "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\Lab7I2Cphase1fall2018JJS_JJS.v".
+        FirstByte = 8'b10010011
+        BaudRate = 20'b00000111010100110000
+        ClockFrequency = 30'b000101111101011110000100000000
+INFO:Xst:3210 - "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\Lab7I2Cphase1fall2018JJS_JJS.v" line 64: Output port <ReceivedData> of the instance <DataUnit> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Lab7I2Cphase1fall2018MK_LP> synthesized.
+
+Synthesizing Unit <ClockedPositiveOneShot>.
+    Related source file is "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\ClockedPositiveOneShot.v".
+        State0 = 0
+        State1 = 1
+        State2 = 2
+        State3 = 3
+    Found 2-bit register for signal <State>.
+    Found finite state machine <FSM_0> for signal <State>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | CLOCK (rising_edge)                            |
+    | Reset              | Reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <ClockedPositiveOneShot> synthesized.
+
+Synthesizing Unit <BaudRateGenerator>.
+    Related source file is "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\BaudRateGenerator.v".
+    Found 1-bit register for signal <uartClock>.
+    Found 16-bit register for signal <baud_count>.
+    Found 16-bit adder for signal <baud_count[15]_GND_3_o_add_4_OUT> created at line 25.
+    Found 30-bit comparator equal for signal <GND_3_o_GND_3_o_equal_4_o> created at line 21
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <BaudRateGenerator> synthesized.
+
+Synthesizing Unit <div_30u_21u>.
+    Related source file is "".
+    Found 50-bit adder for signal <n2579> created at line 0.
+    Found 50-bit adder for signal <GND_4_o_b[20]_add_3_OUT> created at line 0.
+    Found 49-bit adder for signal <n2583> created at line 0.
+    Found 49-bit adder for signal <GND_4_o_b[20]_add_5_OUT> created at line 0.
+    Found 48-bit adder for signal <n2587> created at line 0.
+    Found 48-bit adder for signal <GND_4_o_b[20]_add_7_OUT> created at line 0.
+    Found 47-bit adder for signal <n2591> created at line 0.
+    Found 47-bit adder for signal <GND_4_o_b[20]_add_9_OUT> created at line 0.
+    Found 46-bit adder for signal <n2595> created at line 0.
+    Found 46-bit adder for signal <GND_4_o_b[20]_add_11_OUT> created at line 0.
+    Found 45-bit adder for signal <n2599> created at line 0.
+    Found 45-bit adder for signal <GND_4_o_b[20]_add_13_OUT> created at line 0.
+    Found 44-bit adder for signal <n2603> created at line 0.
+    Found 44-bit adder for signal <GND_4_o_b[20]_add_15_OUT> created at line 0.
+    Found 43-bit adder for signal <n2607> created at line 0.
+    Found 43-bit adder for signal <GND_4_o_b[20]_add_17_OUT> created at line 0.
+    Found 42-bit adder for signal <n2611> created at line 0.
+    Found 42-bit adder for signal <GND_4_o_b[20]_add_19_OUT> created at line 0.
+    Found 41-bit adder for signal <n2615> created at line 0.
+    Found 41-bit adder for signal <GND_4_o_b[20]_add_21_OUT> created at line 0.
+    Found 40-bit adder for signal <n2619> created at line 0.
+    Found 40-bit adder for signal <GND_4_o_b[20]_add_23_OUT> created at line 0.
+    Found 39-bit adder for signal <n2623> created at line 0.
+    Found 39-bit adder for signal <GND_4_o_b[20]_add_25_OUT> created at line 0.
+    Found 38-bit adder for signal <n2627> created at line 0.
+    Found 38-bit adder for signal <GND_4_o_b[20]_add_27_OUT> created at line 0.
+    Found 37-bit adder for signal <n2631> created at line 0.
+    Found 37-bit adder for signal <GND_4_o_b[20]_add_29_OUT> created at line 0.
+    Found 36-bit adder for signal <n2635> created at line 0.
+    Found 36-bit adder for signal <GND_4_o_b[20]_add_31_OUT> created at line 0.
+    Found 35-bit adder for signal <n2639> created at line 0.
+    Found 35-bit adder for signal <GND_4_o_b[20]_add_33_OUT> created at line 0.
+    Found 34-bit adder for signal <n2643> created at line 0.
+    Found 34-bit adder for signal <GND_4_o_b[20]_add_35_OUT> created at line 0.
+    Found 33-bit adder for signal <n2647> created at line 0.
+    Found 33-bit adder for signal <GND_4_o_b[20]_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <n2651> created at line 0.
+    Found 32-bit adder for signal <GND_4_o_b[20]_add_39_OUT> created at line 0.
+    Found 31-bit adder for signal <n2655> created at line 0.
+    Found 31-bit adder for signal <GND_4_o_b[20]_add_41_OUT> created at line 0.
+    Found 30-bit adder for signal <n2659> created at line 0.
+    Found 30-bit adder for signal <a[29]_b[20]_add_43_OUT> created at line 0.
+    Found 30-bit adder for signal <n2663> created at line 0.
+    Found 30-bit adder for signal <a[29]_GND_4_o_add_45_OUT> created at line 0.
+    Found 30-bit adder for signal <n2667> created at line 0.
+    Found 30-bit adder for signal <a[29]_GND_4_o_add_47_OUT> created at line 0.
+    Found 30-bit adder for signal <n2671> created at line 0.
+    Found 30-bit adder for signal <a[29]_GND_4_o_add_49_OUT> created at line 0.
+    Found 30-bit adder for signal <n2675> created at line 0.
+    Found 30-bit adder for signal <a[29]_GND_4_o_add_51_OUT> created at line 0.
+    Found 30-bit adder for signal <n2679> created at line 0.
+    Found 30-bit adder for signal <a[29]_GND_4_o_add_53_OUT> created at line 0.
+    Found 30-bit adder for signal <n2683> created at line 0.
+    Found 30-bit adder for signal <a[29]_GND_4_o_add_55_OUT[29:0]> created at line 0.
+    Found 30-bit adder for signal <n2687> created at line 0.
+    Found 30-bit adder for signal <a[29]_GND_4_o_add_57_OUT[29:0]> created at line 0.
+    Found 30-bit adder for signal <n2691> created at line 0.
+    Found 30-bit adder for signal <a[29]_GND_4_o_add_59_OUT[29:0]> created at line 0.
+    Found 51-bit adder for signal <GND_4_o_b[20]_add_1_OUT> created at line 0.
+    Found 51-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 50-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 49-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 48-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 47-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 46-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 45-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 44-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 43-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 42-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 31-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Summary:
+	inferred  59 Adder/Subtractor(s).
+	inferred  31 Comparator(s).
+	inferred 813 Multiplexer(s).
+Unit <div_30u_21u> synthesized.
+
+Synthesizing Unit <I2C_Controller>.
+    Related source file is "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\I2C_Controller.v".
+        InitialState = 3'b000
+        StartState = 3'b001
+        LoadState = 3'b010
+        WriteState = 3'b011
+        AcknowledgeState = 3'b100
+        TransitState = 3'b101
+        StopState = 3'b110
+    Found 3-bit register for signal <State>.
+    Found 11-bit register for signal <delayTime>.
+    Found 1-bit register for signal <TimeOut>.
+    Found 4-bit register for signal <Count>.
+    Found finite state machine <FSM_1> for signal <State>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 11                                             |
+    | Clock              | clock (rising_edge)                            |
+    | Reset              | Reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit adder for signal <delayTime[10]_GND_5_o_add_3_OUT> created at line 59.
+    Found 4-bit subtractor for signal <GND_5_o_GND_5_o_sub_9_OUT<3:0>> created at line 70.
+    Found 11-bit comparator lessequal for signal <n0001> created at line 56
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <I2C_Controller> synthesized.
+
+Synthesizing Unit <ClockedNegativeOneShot>.
+    Related source file is "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\ClockedNegativeOneShot.v".
+        State0 = 0
+        State1 = 1
+        State2 = 2
+        State3 = 3
+    Found 2-bit register for signal <State>.
+    Found finite state machine <FSM_2> for signal <State>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 1                                              |
+    | Clock              | CLOCK (rising_edge)                            |
+    | Reset              | Reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 01                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <ClockedNegativeOneShot> synthesized.
+
+Synthesizing Unit <I2C_DataUnit>.
+    Related source file is "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\I2C_DataUnit.v".
+        LENGTH = 8
+    Summary:
+	no macro.
+Unit <I2C_DataUnit> synthesized.
+
+Synthesizing Unit <I2C_ShiftRegister>.
+    Related source file is "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\I2C_ShiftRegister.v".
+    Found 1-bit register for signal <ShiftOut>.
+    Found 8-bit register for signal <ReceivedData>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <I2C_ShiftRegister> synthesized.
+
+Synthesizing Unit <I2C_SDAmodule>.
+    Related source file is "C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\I2C_SDAmodule.v".
+    Found 1-bit tristate buffer for signal <SDA> created at line 17
+    Summary:
+	inferred   1 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <I2C_SDAmodule> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 62
+ 11-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 30-bit adder                                          : 18
+ 31-bit adder                                          : 2
+ 32-bit adder                                          : 2
+ 33-bit adder                                          : 2
+ 34-bit adder                                          : 2
+ 35-bit adder                                          : 2
+ 36-bit adder                                          : 2
+ 37-bit adder                                          : 2
+ 38-bit adder                                          : 2
+ 39-bit adder                                          : 2
+ 4-bit subtractor                                      : 1
+ 40-bit adder                                          : 2
+ 41-bit adder                                          : 2
+ 42-bit adder                                          : 2
+ 43-bit adder                                          : 2
+ 44-bit adder                                          : 2
+ 45-bit adder                                          : 2
+ 46-bit adder                                          : 2
+ 47-bit adder                                          : 2
+ 48-bit adder                                          : 2
+ 49-bit adder                                          : 2
+ 50-bit adder                                          : 2
+ 51-bit adder                                          : 1
+# Registers                                            : 7
+ 1-bit register                                        : 3
+ 11-bit register                                       : 1
+ 16-bit register                                       : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 33
+ 11-bit comparator lessequal                           : 1
+ 30-bit comparator equal                               : 1
+ 30-bit comparator lessequal                           : 10
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 1
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 40-bit comparator lessequal                           : 1
+ 41-bit comparator lessequal                           : 1
+ 42-bit comparator lessequal                           : 1
+ 43-bit comparator lessequal                           : 1
+ 44-bit comparator lessequal                           : 1
+ 45-bit comparator lessequal                           : 1
+ 46-bit comparator lessequal                           : 1
+ 47-bit comparator lessequal                           : 1
+ 48-bit comparator lessequal                           : 1
+ 49-bit comparator lessequal                           : 1
+ 50-bit comparator lessequal                           : 1
+ 51-bit comparator lessequal                           : 1
+# Multiplexers                                         : 821
+ 1-bit 2-to-1 multiplexer                              : 815
+ 16-bit 2-to-1 multiplexer                             : 1
+ 30-bit 2-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# FSMs                                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <BaudRateGenerator>.
+The following registers are absorbed into counter <baud_count>: 1 register on signal <baud_count>.
+Unit <BaudRateGenerator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <I2C_Controller>.
+The following registers are absorbed into counter <delayTime>: 1 register on signal <delayTime>.
+The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
+Unit <I2C_Controller> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 30
+ 30-bit adder                                          : 1
+ 30-bit adder carry in                                 : 29
+# Counters                                             : 3
+ 11-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 4-bit down counter                                    : 1
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+# Comparators                                          : 33
+ 11-bit comparator lessequal                           : 1
+ 30-bit comparator equal                               : 1
+ 30-bit comparator lessequal                           : 10
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 1
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 40-bit comparator lessequal                           : 1
+ 41-bit comparator lessequal                           : 1
+ 42-bit comparator lessequal                           : 1
+ 43-bit comparator lessequal                           : 1
+ 44-bit comparator lessequal                           : 1
+ 45-bit comparator lessequal                           : 1
+ 46-bit comparator lessequal                           : 1
+ 47-bit comparator lessequal                           : 1
+ 48-bit comparator lessequal                           : 1
+ 49-bit comparator lessequal                           : 1
+ 50-bit comparator lessequal                           : 1
+ 51-bit comparator lessequal                           : 1
+# Multiplexers                                         : 818
+ 1-bit 2-to-1 multiplexer                              : 814
+ 30-bit 2-to-1 multiplexer                             : 3
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <State[1:3]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 001
+ 01    | 010
+ 11    | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ControlUnit/FSM_2> on signal <State[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 01    | 01
+ 00    | 00
+ 11    | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ControlUnit/FSM_0> on signal <State[1:3]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 001
+ 01    | 010
+ 11    | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ControlUnit/FSM_1> on signal <State[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+ 101   | 101
+ 110   | 110
+-------------------
+
+Optimizing unit <Lab7I2Cphase1fall2018MK_LP> ...
+
+Optimizing unit <BaudRateGenerator> ...
+
+Optimizing unit <I2C_Controller> ...
+
+Optimizing unit <I2C_ShiftRegister> ...
+INFO:Xst:2261 - The FF/Latch <ControlUnit/OneShotPositiveUnit/State_FSM_FFd3> in Unit <Lab7I2Cphase1fall2018MK_LP> is equivalent to the following FF/Latch, which will be removed : <ControlUnit/OneShotNegativeUnit/State_FSM_FFd2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Lab7I2Cphase1fall2018MK_LP, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 50
+ Flip-Flops                                            : 50
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Lab7I2Cphase1fall2018MK_LP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 144
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 10
+#      LUT2                        : 28
+#      LUT3                        : 11
+#      LUT4                        : 11
+#      LUT5                        : 7
+#      LUT6                        : 9
+#      MUXCY                       : 34
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 50
+#      FD                          : 14
+#      FDC                         : 4
+#      FDCE                        : 8
+#      FDE                         : 4
+#      FDR                         : 1
+#      FDRE                        : 16
+#      FDS                         : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 2
+#      IOBUF                       : 1
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              50  out of  18224     0%  
+ Number of Slice LUTs:                   80  out of   9112     0%  
+    Number used as Logic:                80  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     80
+   Number with an unused Flip Flop:      30  out of     80    37%  
+   Number with an unused LUT:             0  out of     80     0%  
+   Number of fully used LUT-FF pairs:    50  out of     80    62%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                           6
+ Number of bonded IOBs:                   5  out of    232     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock_input                        | BUFGP                  | 50    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.777ns (Maximum Frequency: 264.750MHz)
+   Minimum input arrival time before clock: 3.092ns
+   Maximum output required time after clock: 5.240ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_input'
+  Clock period: 3.777ns (frequency: 264.750MHz)
+  Total number of paths / destination ports: 2986 / 77
+-------------------------------------------------------------------------
+Delay:               3.777ns (Levels of Logic = 26)
+  Source:            BaudUnit/baud_count_1 (FF)
+  Destination:       BaudUnit/baud_count_15 (FF)
+  Source Clock:      clock_input rising
+  Destination Clock: clock_input rising
+
+  Data Path: BaudUnit/baud_count_1 to BaudUnit/baud_count_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.447   0.845  BaudUnit/baud_count_1 (BaudUnit/baud_count_1)
+     LUT3:I0->O            1   0.205   0.000  BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_lut<0>1 (BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<0> (BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<1> (BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<2> (BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<3> (BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<4> (BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<5> (BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<6> (BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<6>)
+     MUXCY:CI->O          18   0.019   1.050  BaudUnit/Mcompar_GND_3_o_GND_3_o_equal_4_o_cy<7> (BaudUnit/GND_3_o_GND_3_o_equal_4_o)
+     LUT2:I1->O            1   0.205   0.000  BaudUnit/Mcount_baud_count_lut<0> (BaudUnit/Mcount_baud_count_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  BaudUnit/Mcount_baud_count_cy<0> (BaudUnit/Mcount_baud_count_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<1> (BaudUnit/Mcount_baud_count_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<2> (BaudUnit/Mcount_baud_count_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<3> (BaudUnit/Mcount_baud_count_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<4> (BaudUnit/Mcount_baud_count_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<5> (BaudUnit/Mcount_baud_count_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<6> (BaudUnit/Mcount_baud_count_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<7> (BaudUnit/Mcount_baud_count_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<8> (BaudUnit/Mcount_baud_count_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<9> (BaudUnit/Mcount_baud_count_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<10> (BaudUnit/Mcount_baud_count_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<11> (BaudUnit/Mcount_baud_count_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<12> (BaudUnit/Mcount_baud_count_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  BaudUnit/Mcount_baud_count_cy<13> (BaudUnit/Mcount_baud_count_cy<13>)
+     MUXCY:CI->O           0   0.019   0.000  BaudUnit/Mcount_baud_count_cy<14> (BaudUnit/Mcount_baud_count_cy<14>)
+     XORCY:CI->O           1   0.180   0.000  BaudUnit/Mcount_baud_count_xor<15> (BaudUnit/Mcount_baud_count15)
+     FDRE:D                    0.102          BaudUnit/baud_count_15
+    ----------------------------------------
+    Total                      3.777ns (1.882ns logic, 1.895ns route)
+                                       (49.8% logic, 50.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_input'
+  Total number of paths / destination ports: 38 / 37
+-------------------------------------------------------------------------
+Offset:              3.092ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       GoOneShotUnit/State_FSM_FFd2 (FF)
+  Destination Clock: clock_input rising
+
+  Data Path: Reset to GoOneShotUnit/State_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            35   1.222   1.563  Reset_IBUF (Reset_IBUF)
+     LUT3:I0->O            1   0.205   0.000  ControlUnit/OneShotPositiveUnit/State_FSM_FFd2_rstpot (ControlUnit/OneShotPositiveUnit/State_FSM_FFd2_rstpot)
+     FD:D                      0.102          ControlUnit/OneShotPositiveUnit/State_FSM_FFd2
+    ----------------------------------------
+    Total                      3.092ns (1.529ns logic, 1.563ns route)
+                                       (49.5% logic, 50.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_input'
+  Total number of paths / destination ports: 8 / 2
+-------------------------------------------------------------------------
+Offset:              5.240ns (Levels of Logic = 2)
+  Source:            ControlUnit/State_FSM_FFd3 (FF)
+  Destination:       SDA (PAD)
+  Source Clock:      clock_input rising
+
+  Data Path: ControlUnit/State_FSM_FFd3 to SDA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             25   0.447   1.440  ControlUnit/State_FSM_FFd3 (ControlUnit/State_FSM_FFd3)
+     LUT4:I0->O            1   0.203   0.579  DataUnit/SDAUnit/Mmux_StartStopAck_ShiftDataOut_MUX_2123_o11 (SDA_IOBUF)
+     IOBUF:I->IO               2.571          SDA_IOBUF (SDA)
+    ----------------------------------------
+    Total                      5.240ns (3.221ns logic, 2.019ns route)
+                                       (61.5% logic, 38.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock_input
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock_input    |    3.777|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.21 secs
+ 
+--> 
+
+Total memory usage is 349908 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

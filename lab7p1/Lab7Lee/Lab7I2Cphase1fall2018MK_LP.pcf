@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Oct 23 15:05:36 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clock_input" LOCATE = SITE "V10" LEVEL 1;
+COMP "SDA" LOCATE = SITE "L3" LEVEL 1;
+COMP "SCL" LOCATE = SITE "L4" LEVEL 1;
+COMP "Go" LOCATE = SITE "T10" LEVEL 1;
+COMP "Reset" LOCATE = SITE "C9" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\I2C_Controller.v" Line 70: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\I2C_Controller.v" Line 71: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\Lab7I2Cphase1fall2018JJS_JJS.v" Line 70: Assignment to <arg fmt="%s" index="1">ReceivedData</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\Source Files\Lab7I2Cphase1fall2018JJS_JJS.v</arg>&quot; line <arg fmt="%s" index="2">64</arg>: Output port &lt;<arg fmt="%s" index="3">ReceivedData</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DataUnit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">ControlUnit/OneShotPositiveUnit/State_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Lab7I2Cphase1fall2018MK_LP</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ControlUnit/OneShotNegativeUnit/State_FSM_FFd2&gt; </arg>
+</msg>
+
+</messages>
+
