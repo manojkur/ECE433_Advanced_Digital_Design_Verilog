@@ -1,15 +1,17 @@
-//File Name: I2C_Controller.v
+//File Name: ControllerReadTempI2C.v
 //Author: Manoj Kurapati and Leela Pakanati
 //Date: October 16, 2018
 //ECE433 Fall 2018
 //Phase 1 of Lab #7 I2C driver and TMP101 temperature sensor
 
-module I2C_Controller(
+module ControllerReadTempI2C(
 	input clock,
 	input ClockI2C,
-	input Go,
 	input Reset,
+	inout SDA,
+	input Start,
 	output reg BaudEnable,
+	output reg Done,
 	output reg ReadOrWrite,
 	output reg Select,
 	output reg ShiftorHold,
@@ -26,8 +28,8 @@ module I2C_Controller(
 	reg ACKbit;
 
 	reg [2:0] State;
-	parameter InitialState=3'd0, StartState=3'd1, LoadState=3'd2, WriteState=3'd3, AcknowledgeState=3'd4;
-	parameter TransitState=3'd5, StopState=3'd6; 
+	parameter InitialState=4'd0, StartState=4'd1, LoadState=4'd2, WriteState=4'd3, AcknowledgeWriteState=4'd4;
+	parameter CheckState=4'd5, ReadState=4'd6, AcknowledgeReadState=4'd7, TransitState=4'd8, StopState = 4'd9; 
 
 	reg ClearTimer;
 
@@ -43,13 +45,12 @@ module I2C_Controller(
 			State <= InitialState;
 		else begin
 			State <= NextState;
+			if(OneShotPositive == 1)
+				ACKbit <= SDA;
+			else 
+				ACKbit <= ACKbit;
 		end
 	end
-
-	initial begin
-		ShiftorHold <= 1'b0;
-		ReadOrWrite <= 1'b0;		
-	end 
 
 	//delay timer
 	always @(posedge clock) begin
@@ -67,11 +68,13 @@ module I2C_Controller(
 	//counter
 	always @(posedge clock)begin
 		case(State)
-			LoadState: if(OneShotNegative) Count<=Count-1; else Count<=Count;
-			WriteState: if(OneShotNegative) Count<=Count-1; else Count<=Count;
+			LoadState: if(OneShotNegative)	Count 	<=	Count-1'b1;	else Count 	<=	Count;
+			WriteState: if(OneShotNegative)	Count 	<=	Count-1'b1;	else Count 	<=	Count;
+			ReadState: if(OneShotPositive)	Count 	<=	Count-1'b1;	else Count 	<=	Count;
 			default:Count<=4'd10;
 		endcase
 	end
+
 
 	//next state
 	always @(State, Go, TimeOut, Count, ClockI2C, OneShotPositive)begin
@@ -94,37 +97,55 @@ module I2C_Controller(
 			end
 
 			LoadState: begin
-				if(Count == 4'd9)
-					NextState <= WriteState;
-				else
+				if(Count == 4'd10)
 					NextState <= LoadState;
+				else
+					NextState <= WriteState;
 			end
 
 
 			WriteState: begin
 				if(Count == 1'b1)
-					NextState <= AcknowledgeState;
+					NextState <= AcknowledgeWriteState;
 				else
 					NextState <= WriteState;
 				
 			end
 
-			AcknowledgeState: begin
+			AcknowledgeWriteState: begin
 				if(OneShotPositive)
-					NextState <= TransitState;
+					NextState <= CheckState;
 				else 
-					NextState <= AcknowledgeState;
+					NextState <= AcknowledgeWriteState;
 			end
 
+			CheckState:
+				if(SDA == 0)
+					NextState <= StartState;
+				else
+					NextState <= ReadState;
+
+			ReadState:
+				if(Count == 2)
+					NextState <= AcknowledgeReadState;
+				else
+					NextState <= ReadState;
+
+			AcknowledgeReadState:
+				if(OneShotPositive)
+					NextState<=TransitState;
+				else
+					NextState <= AcknowledgeReadState;
+
 			TransitState: begin
-				if(TimeOut == 1'b1)
+				if(TimeOut)
 					NextState <= StopState;
 				else
 					NextState <= TransitState;
 			end
 
 			StopState: begin
-				if(TimeOut == 1'b1)
+				if(TimeOut)
 					NextState <= InitialState;
 				else
 					NextState <= StopState;
@@ -149,6 +170,7 @@ module I2C_Controller(
 				StartStopAck 	<=	1'b1;
 				ClearTimer		<=	1'b1;
 				ShiftorHold 	<= 	1'b0;
+				Done			<=	1'b0;
 			end
 
 			StartState: begin
@@ -159,6 +181,7 @@ module I2C_Controller(
 				StartStopAck	<=	1'b0;
 				ClearTimer		<= 	1'b0;
 				ShiftorHold 	<= 	1'b0;
+				Done			<=	1'b0;
 			end
 
 			LoadState: begin
@@ -169,6 +192,7 @@ module I2C_Controller(
 				StartStopAck	<=	1'b0;
 				ClearTimer		<=	1'b1;
 				ShiftorHold 	<= 	1'b0;
+				Done			<=	1'b0;
 			end 
 
 			WriteState:	begin
@@ -179,6 +203,7 @@ module I2C_Controller(
 				StartStopAck	<=	1'b0;
 				ClearTimer		<=	1'b1;
 				ShiftorHold 	<= 	OneShotNegative;
+				Done			<=	1'b0;
 			end
 
 			AcknowledgeState: begin
@@ -189,6 +214,7 @@ module I2C_Controller(
 				StartStopAck	<=	1'b0;
 				ClearTimer		<=	1'b1;
 				ShiftorHold 	<= 	1'b0;
+				Done			<=	1'b0;
 			end 
 
 			TransitState: begin
@@ -199,6 +225,7 @@ module I2C_Controller(
 				StartStopAck	<=	1'b0;
 				ClearTimer		<=	1'b0;
 				ShiftorHold 	<= 	1'b0;
+				Done			<=	1'b0;
 			end 
 
 			StopState:begin 
@@ -209,6 +236,7 @@ module I2C_Controller(
 				StartStopAck	<=	1'b1;
 				ClearTimer		<=	1'b0;
 				ShiftorHold 	<= 	1'b0;
+				Done			<=	1'b1;
 			end 
 
 			default: begin
@@ -219,10 +247,9 @@ module I2C_Controller(
 				StartStopAck	<=	1'b0;
 				ClearTimer		<=	1'b0;
 				ShiftorHold 	<= 	1'b0;
+				Done			<=	1'b0;
 			end 
 
 		endcase // State
 	end
-
-
 endmodule
