@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\PongManoj\ipcore_dir\Clock50MHz.v" Line 129: Assignment to <arg fmt="%s" index="1">status_int</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 200: Assignment to <arg fmt="%s" index="1">LOCKED</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 43: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 51: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 93: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 97: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 117: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 119: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 122: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 124: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 143: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 144: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 172: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v</arg>&quot; line <arg fmt="%s" index="2">194</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ClockUnit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">paddlePosition_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">game</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">paddlePosition_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">game</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ballX_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">game</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ballY_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">game</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">game_inst/ballY_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">game_inst/ballX_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">game_inst/ballY_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;game_inst/ballX_1&gt; </arg>
+</msg>
+
+</messages>
+

@@ -1,0 +1,587 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: pong.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pong.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pong"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : pong
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\PongManoj\ipcore_dir\Clock50MHz.v" into library work
+Parsing module <Clock50MHz>.
+Analyzing Verilog file "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" into library work
+Parsing module <video_timer>.
+Parsing module <game>.
+Parsing module <pong>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <pong>.
+
+Elaborating module <Clock50MHz>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=10.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\PongManoj\ipcore_dir\Clock50MHz.v" Line 129: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+WARNING:HDLCompiler:1127 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 200: Assignment to LOCKED ignored, since the identifier is never used
+
+Elaborating module <video_timer>.
+WARNING:HDLCompiler:413 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 43: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 51: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <game>.
+WARNING:HDLCompiler:413 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 93: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 97: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 117: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 119: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 122: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 124: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 143: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 144: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" Line 172: Result of 32-bit expression is truncated to fit in 6-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pong>.
+    Related source file is "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v".
+INFO:Xst:3210 - "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v" line 194: Output port <LOCKED> of the instance <ClockUnit> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <clk25_int>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <pong> synthesized.
+
+Synthesizing Unit <Clock50MHz>.
+    Related source file is "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\PongManoj\ipcore_dir\Clock50MHz.v".
+    Summary:
+	no macro.
+Unit <Clock50MHz> synthesized.
+
+Synthesizing Unit <video_timer>.
+    Related source file is "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v".
+    Found 10-bit register for signal <ypos>.
+    Found 1-bit register for signal <hsync>.
+    Found 1-bit register for signal <vsync>.
+    Found 10-bit register for signal <xpos>.
+    Found 10-bit adder for signal <xpos[9]_GND_6_o_add_2_OUT> created at line 43.
+    Found 10-bit adder for signal <ypos[9]_GND_6_o_add_7_OUT> created at line 51.
+    Found 10-bit comparator greater for signal <PWR_6_o_xpos[9]_LessThan_13_o> created at line 57
+    Found 10-bit comparator lessequal for signal <n0010> created at line 57
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <video_timer> synthesized.
+
+Synthesizing Unit <game>.
+    Related source file is "D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\PongGame\SourceFiles\OriginalPong.v".
+    Found 3-bit register for signal <quadBr>.
+    Found 9-bit register for signal <paddlePosition>.
+    Found 10-bit register for signal <ballX>.
+    Found 9-bit register for signal <ballY>.
+    Found 1-bit register for signal <bounceX>.
+    Found 1-bit register for signal <bounceY>.
+    Found 6-bit register for signal <missTimer>.
+    Found 1-bit register for signal <ballXdir>.
+    Found 1-bit register for signal <ballYdir>.
+    Found 3-bit register for signal <quadAr>.
+    Found 10-bit adder for signal <ballX[9]_GND_7_o_add_19_OUT> created at line 117.
+    Found 9-bit adder for signal <ballY[8]_GND_7_o_add_22_OUT> created at line 122.
+    Found 10-bit adder for signal <n0161> created at line 137.
+    Found 10-bit adder for signal <n0162> created at line 137.
+    Found 11-bit adder for signal <n0164> created at line 138.
+    Found 10-bit adder for signal <n0166> created at line 138.
+    Found 9-bit subtractor for signal <GND_7_o_GND_7_o_sub_10_OUT<8:0>> created at line 97.
+    Found 10-bit subtractor for signal <GND_7_o_GND_7_o_sub_21_OUT<9:0>> created at line 119.
+    Found 9-bit subtractor for signal <GND_7_o_GND_7_o_sub_24_OUT<8:0>> created at line 124.
+    Found 6-bit subtractor for signal <GND_7_o_GND_7_o_sub_58_OUT<5:0>> created at line 172.
+    Found 9-bit comparator lessequal for signal <paddlePosition[8]_PWR_7_o_LessThan_6_o> created at line 92
+    Found 9-bit comparator lessequal for signal <GND_7_o_paddlePosition[8]_LessThan_9_o> created at line 96
+    Found 10-bit comparator greater for signal <xpos[9]_PWR_7_o_LessThan_32_o> created at line 131
+    Found 10-bit comparator greater for signal <ypos[9]_GND_7_o_LessThan_33_o> created at line 131
+    Found 10-bit comparator lessequal for signal <n0037> created at line 132
+    Found 10-bit comparator lessequal for signal <n0040> created at line 133
+    Found 10-bit comparator lessequal for signal <n0043> created at line 134
+    Found 10-bit comparator lessequal for signal <n0046> created at line 135
+    Found 10-bit comparator lessequal for signal <n0053> created at line 137
+    Found 10-bit comparator lessequal for signal <n0056> created at line 137
+    Found 10-bit comparator lessequal for signal <n0059> created at line 137
+    Found 10-bit comparator lessequal for signal <n0062> created at line 137
+    Found 10-bit comparator lessequal for signal <n0065> created at line 138
+    Found 11-bit comparator lessequal for signal <n0068> created at line 138
+    Found 10-bit comparator lessequal for signal <n0071> created at line 138
+    Found 10-bit comparator lessequal for signal <n0075> created at line 138
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred  44 D-type flip-flop(s).
+	inferred  16 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <game> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 10-bit adder                                          : 5
+ 10-bit addsub                                         : 1
+ 11-bit adder                                          : 1
+ 6-bit subtractor                                      : 1
+ 9-bit addsub                                          : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 15
+ 1-bit register                                        : 7
+ 10-bit register                                       : 3
+ 3-bit register                                        : 2
+ 6-bit register                                        : 1
+ 9-bit register                                        : 2
+# Comparators                                          : 18
+ 10-bit comparator greater                             : 3
+ 10-bit comparator lessequal                           : 12
+ 11-bit comparator lessequal                           : 1
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 4
+ 1-bit xor4                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <game>.
+The following registers are absorbed into accumulator <ballX>: 1 register on signal <ballX>.
+The following registers are absorbed into accumulator <ballY>: 1 register on signal <ballY>.
+The following registers are absorbed into counter <missTimer>: 1 register on signal <missTimer>.
+Unit <game> synthesized (advanced).
+
+Synthesizing (advanced) Unit <video_timer>.
+The following registers are absorbed into counter <xpos>: 1 register on signal <xpos>.
+The following registers are absorbed into counter <ypos>: 1 register on signal <ypos>.
+Unit <video_timer> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 10-bit adder                                          : 3
+ 11-bit adder                                          : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 3
+ 10-bit up counter                                     : 2
+ 6-bit down counter                                    : 1
+# Accumulators                                         : 2
+ 10-bit updown accumulator                             : 1
+ 9-bit updown accumulator                              : 1
+# Registers                                            : 22
+ Flip-Flops                                            : 22
+# Comparators                                          : 18
+ 10-bit comparator greater                             : 3
+ 10-bit comparator lessequal                           : 12
+ 11-bit comparator lessequal                           : 1
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 4
+ 1-bit xor4                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <paddlePosition_0> (without init value) has a constant value of 0 in block <game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <paddlePosition_1> (without init value) has a constant value of 0 in block <game>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <pong> ...
+
+Optimizing unit <game> ...
+WARNING:Xst:1710 - FF/Latch <ballX_0> (without init value) has a constant value of 0 in block <game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ballY_0> (without init value) has a constant value of 0 in block <game>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <video_timer> ...
+WARNING:Xst:1710 - FF/Latch <game_inst/ballY_0> (without init value) has a constant value of 0 in block <pong>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <game_inst/ballX_0> (without init value) has a constant value of 0 in block <pong>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <game_inst/ballY_1> in Unit <pong> is equivalent to the following FF/Latch, which will be removed : <game_inst/ballX_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pong, actual ratio is 2.
+FlipFlop game_inst/ballY_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <pong> :
+	Found 2-bit shift register for signal <game_inst/quadAr_1>.
+	Found 2-bit shift register for signal <game_inst/quadBr_1>.
+Unit <pong> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+# Shift Registers                                      : 2
+ 2-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : pong.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 288
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 18
+#      LUT2                        : 14
+#      LUT3                        : 20
+#      LUT4                        : 72
+#      LUT5                        : 32
+#      LUT6                        : 53
+#      MUXCY                       : 48
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 61
+#      FD                          : 8
+#      FDE                         : 9
+#      FDR                         : 15
+#      FDRE                        : 19
+#      FDSE                        : 10
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 13
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      OBUF                        : 10
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              61  out of  18224     0%  
+ Number of Slice LUTs:                  217  out of   9112     2%  
+    Number used as Logic:               215  out of   9112     2%  
+    Number used as Memory:                2  out of   2176     0%  
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    227
+   Number with an unused Flip Flop:     166  out of    227    73%  
+   Number with an unused LUT:            10  out of    227     4%  
+   Number of fully used LUT-FF pairs:    51  out of    227    22%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | DCM_SP:CLKDV           | 1     |
+clk25_int                          | BUFG                   | 62    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.924ns (Maximum Frequency: 168.795MHz)
+   Minimum input arrival time before clock: 1.801ns
+   Maximum output required time after clock: 9.743ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 0.728ns (frequency: 1373.768MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.456ns (Levels of Logic = 0)
+  Source:            clk25_int (FF)
+  Destination:       clk25_int (FF)
+  Source Clock:      Clock rising 0.5X
+  Destination Clock: Clock rising 0.5X
+
+  Data Path: clk25_int to clk25_int
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.579  clk25_int (clk25_int)
+     FDR:R                     0.430          clk25_int
+    ----------------------------------------
+    Total                      1.456ns (0.877ns logic, 0.579ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk25_int'
+  Clock period: 5.924ns (frequency: 168.795MHz)
+  Total number of paths / destination ports: 5648 / 137
+-------------------------------------------------------------------------
+Delay:               5.924ns (Levels of Logic = 6)
+  Source:            game_inst/paddlePosition_7 (FF)
+  Destination:       game_inst/bounceY (FF)
+  Source Clock:      clk25_int rising
+  Destination Clock: clk25_int rising
+
+  Data Path: game_inst/paddlePosition_7 to game_inst/bounceY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.447   1.174  game_inst/paddlePosition_7 (game_inst/paddlePosition_7)
+     LUT6:I1->O            3   0.203   0.651  game_inst/Madd_n0161_cy<7>11 (game_inst/Madd_n0161_cy<7>)
+     LUT2:I1->O            2   0.205   0.864  game_inst/Madd_n0161_xor<8>11 (game_inst/n0161<8>)
+     LUT4:I0->O            1   0.203   0.000  game_inst/Mcompar_BUS_0004_xpos[9]_LessThan_39_o_lut<4> (game_inst/Mcompar_BUS_0004_xpos[9]_LessThan_39_o_lut<4>)
+     MUXCY:S->O            1   0.366   0.684  game_inst/Mcompar_BUS_0004_xpos[9]_LessThan_39_o_cy<4> (game_inst/BUS_0004_xpos[9]_LessThan_39_o)
+     LUT6:I4->O            2   0.203   0.617  game_inst/paddle (game_inst/paddle)
+     LUT6:I5->O            1   0.205   0.000  game_inst/bounceY_glue_set (game_inst/bounceY_glue_set)
+     FDR:D                     0.102          game_inst/bounceY
+    ----------------------------------------
+    Total                      5.924ns (1.934ns logic, 3.990ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk25_int'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.801ns (Levels of Logic = 1)
+  Source:            rota (PAD)
+  Destination:       game_inst/Mshreg_quadAr_1 (FF)
+  Destination Clock: clk25_int rising
+
+  Data Path: rota to game_inst/Mshreg_quadAr_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  rota_IBUF (rota_IBUF)
+     SRLC16E:D                -0.060          game_inst/Mshreg_quadAr_1
+    ----------------------------------------
+    Total                      1.801ns (1.222ns logic, 0.579ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk25_int'
+  Total number of paths / destination ports: 873 / 4
+-------------------------------------------------------------------------
+Offset:              9.743ns (Levels of Logic = 7)
+  Source:            game_inst/ballX_4 (FF)
+  Destination:       blue<0> (PAD)
+  Source Clock:      clk25_int rising
+
+  Data Path: game_inst/ballX_4 to blue<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.447   1.085  game_inst/ballX_4 (game_inst/ballX_4)
+     LUT5:I2->O            4   0.205   0.684  game_inst/Madd_n0164_cy<5>11 (game_inst/Madd_n0164_cy<5>)
+     LUT5:I4->O            2   0.205   0.961  game_inst/Madd_n0164_xor<9>11 (game_inst/n0164<9>)
+     LUT5:I0->O            0   0.203   0.000  game_inst/Mcompar_GND_7_o_BUS_0006_LessThan_46_o_lutdi4 (game_inst/Mcompar_GND_7_o_BUS_0006_LessThan_46_o_lutdi4)
+     MUXCY:DI->O           9   0.339   1.077  game_inst/Mcompar_GND_7_o_BUS_0006_LessThan_46_o_cy<4> (game_inst/GND_7_o_BUS_0006_LessThan_46_o)
+     LUT4:I0->O            2   0.203   0.981  game_inst/ball1 (game_inst/ball)
+     LUT6:I0->O            1   0.203   0.579  game_inst/blue<0> (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_0_OBUF (blue<0>)
+    ----------------------------------------
+    Total                      9.743ns (4.376ns logic, 5.367ns route)
+                                       (44.9% logic, 55.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    1.456|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk25_int
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk25_int      |    5.924|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.92 secs
+ 
+--> 
+
+Total memory usage is 4523284 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
