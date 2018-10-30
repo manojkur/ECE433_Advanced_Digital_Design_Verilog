@@ -140,8 +140,8 @@ wire background = (visible && !(border || paddle || ball));
 wire checkerboard = (xpos[5] ^ ypos[5]);
 wire missed = visible && missTimer != 0;
 
-assign red   = { missed || border || paddle, 3'b00 };
-assign green = { !missed && (border || paddle || ball), 3'b00 };
+assign red   = { missed || border || paddle, 2'b00 };
+assign green = { !missed && (border || paddle || ball), 2'b00 };
 assign blue  = { !missed && (border || ball), background && checkerboard};//, background && !checkerboard, background && !checkerboard  }; 
 		
 // ball collision	
