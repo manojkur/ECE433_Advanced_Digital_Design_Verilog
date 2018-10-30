@@ -61,7 +61,6 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="../SourceFiles/PongGame2018fall_JJS_JJS.v" xil_pn:type="FILE_VERILOG"/>
     <file xil_pn:name="../SourceFiles/UniversalCounter10bitsV5.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
@@ -72,7 +71,6 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="13"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="13"/>
     </file>
-    <file xil_pn:name="../SourceFiles/vsyncModule2108fallTemplate.v" xil_pn:type="FILE_VERILOG"/>
     <file xil_pn:name="ipcore_dir/Clock50MHz.xco" xil_pn:type="FILE_COREGEN">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
