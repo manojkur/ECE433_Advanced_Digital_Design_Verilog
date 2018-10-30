@@ -18,7 +18,7 @@ Xresolution,  hsync, vsync, xpos, ypos, Reset, Clock);
 parameter ResolutionSize=10, SystemClockSize=10;
 input [ResolutionSize-1:0] Xresolution, Yresolution;
 input [SystemClockSize-1:0] SystemClockFreq, CRTClockFreq;
-input reset, clock;
+input Reset, Clock;
 output hsync, vsync;
 output [ResolutionSize-1:0] xpos, ypos;	//x and y position coordinates
 
