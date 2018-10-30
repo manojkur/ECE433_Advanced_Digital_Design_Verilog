@@ -6,11 +6,11 @@
 //Test: On Nexys 3 board successfully
 //Purpose: generate VGA timing signals hsync and vsync
 // and synchronized(x,y) coordinates.
-//inputs: resolution (x,y) and system clock in MHz
+//inputs: resolution (x,y) and system Clock in MHz
 //active videos are Xresolution and Yresolution
 //y ranges from 400 to 600 pixels; x ranges from 600 to 800 pixels. 
 //synch pulse, back porch and front porch are defined within this module
-// hsync <= ~(xposos > 664 && xposos <= 760);  // active for 95 clocks
+// hsync <= ~(xposos > 664 && xposos <= 760);  // active for 95 Clocks
 // vsync <= ~(yposos == 490 || yposos == 491);   // active for lines 490 and 491
 
 module CRTcontroller2018fall(SystemClockFreq, CRTClockFreq, Yresolution, 
@@ -35,7 +35,7 @@ wire LineEnd;
 wire PixelClock;
 
 //module hsyncModule2018fall(SynchPulse, BackPorch, ActiveVideo, FrontPorch, 
-//hsync, LineEnd, xposition, PixelClock, reset, clock);
+//hsync, LineEnd, xposition, PixelClock, Reset, Clock);
 
 hsyncModule2018fall hsyncUnit(
 	.hSynchPulse(hSynchPulse),
@@ -50,7 +50,7 @@ hsyncModule2018fall hsyncUnit(
 	.Clock(Clock));
 
 //module vsyncModule2018fallTemplate(LineEnd, vSynchPulse, vFrontPorch, Yresolution, 
-//vBackPorch, vsync, ypos, reset, clock);
+//vBackPorch, vsync, ypos, Reset, Clock);
 vsyncModule2018fallTemplate vsyncUnit(
 	.LineEnd(LineEnd), 
 	.vSynchPulse(vSynchPulse), 
@@ -63,7 +63,7 @@ vsyncModule2018fallTemplate vsyncUnit(
 	.Clock(Clock));
 
 //module CRTClock2018Template(SystemClockFreq, CRTClockFreq, PixelClock, Reset, Clock);
-CRTClock2018Template CRTclockUnit(
+CRTClock2018Template CRTClockUnit(
 	.SystemClockFreq(SystemClockFreq), 
 	.CRTClockFreq(CRTClockFreq), 
 	.PixelClock(PixelClock), 
