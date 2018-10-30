@@ -28,8 +28,17 @@ parameter [9:0] SystemClock=10'd100, CRTClock=10'd25; //MHz
 
 //module CRTcontroller2018fall(SystemClockFreq, CRTClockFreq, Yresolution, 
 //Xresolution,  hsync, vsync, xpos, ypos, reset, clock);
-CRTcontroller2018fall VGAdisplay(SystemClock, CRTClock, NumberofLines, 
-    NumberofPixels,  hsync, vsync, xpos, ypos, Reset, Clock);
+CRTcontroller2018fall VGAdisplay(
+	.SystemClock(SystemClock), 
+	.CRTClock(CRTClock), 
+	.NumberofLines(NumberofLines),
+	.NumberofPixels(NumberofPixels),
+	.hsync(hsync), 
+	.vsync(vsync), 
+	.xpos(xpos), 
+	.ypos(ypos), 
+	.Reset(Reset), 
+	.Clock(Clock));
 	  
 /* module game_module2018fall(
 				input [9:0] xpos,
@@ -40,7 +49,15 @@ CRTcontroller2018fall VGAdisplay(SystemClock, CRTClock, NumberofLines,
 				output [3:0] green,
 				output [3:0] blue, input Reset,input clk25);
 */
-game_module2018fall gameUnit(xpos, ypos, rota, rotb, 
-red, green, blue,Reset, Clock);
+game_module2018fall gameUnit(
+	.xpos(xpos), 
+	.ypos(ypos), 
+	.rota(rota), 
+	.rotb(rotb), 
+	.red(red), 
+	.green(green), 
+	.blue(blue),
+	.Reset(Reset), 
+	.Clock(Clock));
 					
 endmodule
