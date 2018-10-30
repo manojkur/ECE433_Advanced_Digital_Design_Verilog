@@ -1,0 +1,29 @@
+Command line:
+   ControllerReadTempI2C_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51269
+
+Tue Oct 30 13:58:24 2018
+
+
+ Elaboration Time: 0.34375 sec
+
+ Current Memory Usage: 1697.41 Meg
+
+ Total Signals          : 39
+ Total Nets             : 39
+ Total Signal Drivers   : 25
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 51
+ Total Traceable Variables  : 59
+ Total Scalar Nets and Variables : 459
+Total Line Count : 211
+
+ Total Simulation Time: 0.40625 sec
+
+ Current Memory Usage: 1225.55 Meg
+
+Tue Oct 30 13:59:30 2018
+

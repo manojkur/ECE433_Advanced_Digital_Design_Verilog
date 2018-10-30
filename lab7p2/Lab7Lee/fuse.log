@@ -1,0 +1,23 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/lab7p2/Lab7Lee/ControllerReadTempI2C_tb_isim_beh.exe -prj C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/lab7p2/Lab7Lee/ControllerReadTempI2C_tb_beh.prj work.ControllerReadTempI2C_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/lab7p2/Lab7Lee/../Source Files/ClockedPositiveOneShot.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/lab7p2/Lab7Lee/../Source Files/ClockedNegativeOneShot.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/lab7p2/Lab7Lee/../Source Files/ControllerReadTempI2C.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/lab7p2/Lab7Lee/../Source Files/ControllerReadTempI2C_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module ClockedNegativeOneShot
+Compiling module ClockedPositiveOneShot
+Compiling module ControllerReadTempI2C
+Compiling module ControllerReadTempI2C_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 Verilog Units
+Built simulation executable C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/lab7p2/Lab7Lee/ControllerReadTempI2C_tb_isim_beh.exe
+Fuse Memory Usage: 27412 KB
+Fuse CPU Usage: 499 ms
