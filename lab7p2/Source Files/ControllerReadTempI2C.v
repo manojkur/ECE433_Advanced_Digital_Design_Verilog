@@ -8,8 +8,8 @@ module ControllerReadTempI2C(
 	input clock,
 	input ClockI2C,
 	input Reset,
-	inout SDA,
-	input Start,
+	input SDA,
+	input Go,
 	output reg BaudEnable,
 	output reg Done,
 	output reg ReadOrWrite,
@@ -27,13 +27,13 @@ module ControllerReadTempI2C(
 
 	reg ACKbit;
 
-	reg [2:0] State;
+	reg [3:0] State;
 	parameter InitialState=4'd0, StartState=4'd1, LoadState=4'd2, WriteState=4'd3, AcknowledgeWriteState=4'd4;
 	parameter CheckState=4'd5, ReadState=4'd6, AcknowledgeReadState=4'd7, TransitState=4'd8, StopState = 4'd9; 
 
 	reg ClearTimer;
 
-	reg [2:0] NextState = 1'b0;
+	reg [3:0] NextState = 1'b0;
 	reg [3:0] Count = 4'd10;
 
 	reg TimeOut;
@@ -54,12 +54,12 @@ module ControllerReadTempI2C(
 
 	//delay timer
 	always @(posedge clock) begin
-		if(ClearTimer | (delayTime>=11'd2000))
+		if(ClearTimer | (delayTime>=11'd4))
 			delayTime<=1'b0;
 		else
 			delayTime<=delayTime+1'b1;
 
-		if(delayTime == 11'd2000) begin
+		if(delayTime == 11'd4) begin
 			TimeOut <= 1'b1;
 		end else
 			TimeOut<= 1'b0;
@@ -77,7 +77,7 @@ module ControllerReadTempI2C(
 
 
 	//next state
-	always @(State, Go, TimeOut, Count, ClockI2C, OneShotPositive)begin
+	always @(State, Go, TimeOut, Count, ClockI2C, OneShotPositive, SDA)begin
 		case(State)
 			InitialState:begin
 				if(Go)
@@ -120,7 +120,7 @@ module ControllerReadTempI2C(
 			end
 
 			CheckState:
-				if(SDA == 0)
+				if(SDA)
 					NextState <= StartState;
 				else
 					NextState <= ReadState;
@@ -160,7 +160,7 @@ module ControllerReadTempI2C(
 
 
 	//outputs
-	always @(State, OneShotNegative)begin
+	always @(State, OneShotNegative, OneShotPositive)begin
 		case(State)
 			InitialState: begin
 				BaudEnable 		<=	1'b0;
@@ -206,7 +206,40 @@ module ControllerReadTempI2C(
 				Done			<=	1'b0;
 			end
 
-			AcknowledgeState: begin
+			AcknowledgeWriteState: begin
+				BaudEnable		<=	1'b1;
+				ReadOrWrite		<=	1'b1;
+				WriteLoad		<=	1'b0;
+				Select			<=	1'b0;
+				StartStopAck	<=	1'b0;
+				ClearTimer		<=	1'b1;
+				ShiftorHold 	<= 	1'b0;
+				Done			<=	1'b0;
+			end 
+
+			CheckState: begin
+				BaudEnable		<=	1'b1;
+				ReadOrWrite		<=	1'b1;
+				WriteLoad		<=	1'b0;
+				Select			<=	1'b0;
+				StartStopAck	<=	1'b0;
+				ClearTimer		<=	1'b1;
+				ShiftorHold 	<= 	1'b0;
+				Done			<=	1'b0;
+			end 
+
+			ReadState: begin
+				BaudEnable		<=	1'b1;
+				ReadOrWrite		<=	1'b1;
+				WriteLoad		<=	1'b0;
+				Select			<=	1'b1;
+				StartStopAck	<=	1'b0;
+				ClearTimer		<=	1'b1;
+				ShiftorHold 	<= 	OneShotPositive;
+				Done			<=	1'b0;
+			end 
+
+			AcknowledgeReadState: begin
 				BaudEnable		<=	1'b1;
 				ReadOrWrite		<=	1'b1;
 				WriteLoad		<=	1'b0;

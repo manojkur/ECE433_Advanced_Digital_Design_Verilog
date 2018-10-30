@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Lab7I2Cphase1fall2018MK_LP.ucf (C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/Lab7I2Cphase1fall2018MK_LP.ucf)</SelectedItem>
+         <SelectedItem>Lab7Phase2I2C2018fallJJS_JJS (C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/lab7p2/Source Files/Lab7Phase2I2C2018fallJJS_JJS.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000020e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000020e0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000222000000020000000000000000000000000200000064ffffffff000000810000000300000002000002220000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Lab7I2Cphase1fall2018MK_LP.ucf (C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Lab7Lee/Lab7I2Cphase1fall2018MK_LP.ucf)</CurrentItem>
+      <CurrentItem>Lab7Phase2I2C2018fallJJS_JJS (C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/lab7p2/Source Files/Lab7Phase2I2C2018fallJJS_JJS.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -23,13 +23,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ac0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -38,7 +38,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a3000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002d70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000001ac000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000000e00000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>BaudRateGenerator.v</CurrentItem>
    </ItemView>
@@ -64,34 +64,44 @@
          <ClosedNode>Implement Design/Translate</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ac0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/BaudRateGeneratorI2C_tb C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|Source Files|BaudRateGeneratorI2C_tb.v</ClosedNode>
+         <ClosedNode>/BaudRateGeneratorI2C_tb C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|lab7p2|Source Files|BaudRateGeneratorI2C_tb.v</ClosedNode>
+         <ClosedNode>/ControllerReadTempI2C_tb C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|lab7p2|Source Files|ControllerReadTempI2C_tb.v</ClosedNode>
          <ClosedNode>/I2C_Controller_tb C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|Source Files|I2C_ControllerI2C_tb.v/uut - I2C_Controller</ClosedNode>
          <ClosedNode>/I2C_DataUnit_tb C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|Source Files|I2C_DataUnit_tb.v</ClosedNode>
+         <ClosedNode>/I2C_DataUnit_tb C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|lab7p2|Source Files|I2C_DataUnit_tb.v</ClosedNode>
          <ClosedNode>/Lab7I2Cphase1fall2018MK_LP C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|Source Files|Lab7I2Cphase1fall2018JJS_JJS.v</ClosedNode>
+         <ClosedNode>/Lab7Phase2I2C2018fallJJS_JJS C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|lab7p2|Source Files|Lab7Phase2I2C2018fallJJS_JJS.v</ClosedNode>
+         <ClosedNode>/Lab7Phase2I2C2018fallJJS_JJS C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|lab7p2|Source Files|Lab7Phase2I2C2018fallJJS_JJS.v/DisplayUnit - SevenSegDriver</ClosedNode>
+         <ClosedNode>/Lab7Phase2I2C2018fallJJS_JJS C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|lab7p2|Source Files|Lab7Phase2I2C2018fallJJS_JJS.v/ReadUnit - Lab7I2Cphase1fall2018MK_LP</ClosedNode>
          <ClosedNode>/SDAmodule_tb C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|Source Files|I2C__SDAmodule_tb.v</ClosedNode>
+         <ClosedNode>/SDAmodule_tb C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|lab7p2|Source Files|I2C_SDAmodule_tb.v</ClosedNode>
          <ClosedNode>/ShiftRegisterI2C_tb C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|Source Files|I2C_ShiftRegister_tb.v</ClosedNode>
+         <ClosedNode>/ShiftRegisterI2C_tb C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|lab7p2|Source Files|I2C_ShiftRegister_tb.v</ClosedNode>
          <ClosedNode>/SquareWaveGenerator_tb C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|Source Files|SquareWaveGenerator_tb.v</ClosedNode>
+         <ClosedNode>/SquareWaveGenerator_tb C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|lab7p2|Source Files|SquareWaveGenerator_tb.v</ClosedNode>
          <ClosedNode>/lab7phase1overall C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|Source Files|lab7phase1overall2018fall_tb.v</ClosedNode>
+         <ClosedNode>/lab7phase1overall C:|Users|pakanalk|OneDrive - Rose-Hulman Institute of Technology|Class Files|jr_fall|ECE433|Lab7|ECE433_Advanced_Digital_Design_Verilog|lab7p2|Source Files|lab7phase1overall2018fall_tb.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>lab7phase1overall (C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Source Files/lab7phase1overall2018fall_tb.v)</SelectedItem>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000166000000020000000000000000000000000200000064ffffffff000000810000000300000002000001660000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000188000000020000000000000000000000000200000064ffffffff000000810000000300000002000001880000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>lab7phase1overall (C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/Lab7/ECE433_Advanced_Digital_Design_Verilog/Source Files/lab7phase1overall2018fall_tb.v)</CurrentItem>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -112,13 +122,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ac0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -142,11 +152,22 @@
          <ClosedNode>CORE Generator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ac0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" ></ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>

@@ -1,18 +1,50 @@
 
 
-NET "Go" LOC = T10;
+NET "Start" LOC = B8;
 NET "SDA" LOC = L3;
-NET "clock_input" LOC = V10;
+NET "SystemClock" LOC = V10;
 NET "Reset" LOC = C9;
 NET "SCL" LOC = L4;
+NET "Mode" LOC = T10;
+NET "ChipSelect[2]" LOC = T5;
+NET "ChipSelect[1]" LOC = V8;
+NET "ChipSelect[0]" LOC = U8;
 # PlanAhead Generated IO constraints 
 
-NET "clock_input" IOSTANDARD = LVCMOS33;
-NET "Go" IOSTANDARD = LVCMOS33;
+NET "SystemClock" IOSTANDARD = LVCMOS33;
+NET "Start" IOSTANDARD = LVCMOS33;
 NET "Reset" IOSTANDARD = LVCMOS33;
 NET "SCL" IOSTANDARD = LVCMOS33;
 NET "SDA" IOSTANDARD = LVCMOS33;
+NET "ChipSelect[2]" IOSTANDARD = LVCMOS33;
+NET "ChipSelect[1]" IOSTANDARD = LVCMOS33;
+NET "ChipSelect[0]" IOSTANDARD = LVCMOS33;
 
 # PlanAhead Generated physical constraints 
 
 
+NET "Display[7]" LOC = M13;//7segs
+NET "Display[6]" LOC = L14;
+NET "Display[5]" LOC = N14;
+NET "Display[4]" LOC = M14;
+NET "Display[3]" LOC = U18;
+NET "Display[2]" LOC = U17;
+NET "Display[1]" LOC = T18;
+NET "Display[0]" LOC = T17;
+NET "Transistors[3]" LOC = P17;//transistors
+NET "Transistors[2]" LOC = P18;
+NET "Transistors[1]" LOC = N15;
+NET "Transistors[0]" LOC = N16;
+
+NET "Display[7]" IOSTANDARD = LVCMOS33;
+NET "Display[6]" IOSTANDARD = LVCMOS33;
+NET "Display[5]" IOSTANDARD = LVCMOS33;
+NET "Display[4]" IOSTANDARD = LVCMOS33;
+NET "Display[3]" IOSTANDARD = LVCMOS33;
+NET "Display[2]" IOSTANDARD = LVCMOS33;
+NET "Display[1]" IOSTANDARD = LVCMOS33;
+NET "Display[0]" IOSTANDARD = LVCMOS33;
+NET "Transistors[3]" IOSTANDARD = LVCMOS33;
+NET "Transistors[2]" IOSTANDARD = LVCMOS33;
+NET "Transistors[1]" IOSTANDARD = LVCMOS33;
+NET "Transistors[0]" IOSTANDARD = LVCMOS33;

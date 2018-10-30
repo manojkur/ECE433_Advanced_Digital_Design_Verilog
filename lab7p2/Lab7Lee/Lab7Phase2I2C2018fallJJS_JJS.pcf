@@ -1,0 +1,28 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Oct 24 17:53:11 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SDA" LOCATE = SITE "L3" LEVEL 1;
+COMP "SCL" LOCATE = SITE "L4" LEVEL 1;
+COMP "Mode" LOCATE = SITE "T10" LEVEL 1;
+COMP "Reset" LOCATE = SITE "C9" LEVEL 1;
+COMP "Start" LOCATE = SITE "B8" LEVEL 1;
+COMP "SystemClock" LOCATE = SITE "V10" LEVEL 1;
+COMP "ChipSelect<0>" LOCATE = SITE "U8" LEVEL 1;
+COMP "ChipSelect<1>" LOCATE = SITE "V8" LEVEL 1;
+COMP "ChipSelect<2>" LOCATE = SITE "T5" LEVEL 1;
+COMP "Transistors<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "Transistors<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "Transistors<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "Transistors<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "Display<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "Display<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "Display<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "Display<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "Display<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "Display<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "Display<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "Display<7>" LOCATE = SITE "M13" LEVEL 1;
+SCHEMATIC END;
+

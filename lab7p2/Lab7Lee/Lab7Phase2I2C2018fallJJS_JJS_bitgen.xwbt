@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\lab7p2\Lab7Lee\Lab7Phase2I2C2018fallJJS_JJS.ncd
+OUTFILE=C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\lab7p2\Lab7Lee\Lab7Phase2I2C2018fallJJS_JJS.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\Lab7\ECE433_Advanced_Digital_Design_Verilog\lab7p2\Lab7Lee
+LICENSE=WebPack
+USER_INFO=174114502_1777496879_210571720_868
