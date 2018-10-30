@@ -29,10 +29,10 @@ parameter [9:0] SystemClock=10'd100, CRTClock=10'd25; //MHz
 //module CRTcontroller2018fall(SystemClockFreq, CRTClockFreq, Yresolution, 
 //Xresolution,  hsync, vsync, xpos, ypos, reset, clock);
 CRTcontroller2018fall VGAdisplay(
-	.SystemClock(SystemClock), 
-	.CRTClock(CRTClock), 
-	.NumberofLines(NumberofLines),
-	.NumberofPixels(NumberofPixels),
+	.SystemClockFreq(SystemClock), 
+	.CRTClockFreq(CRTClock), 
+	.Yresolution(NumberofLines),
+	.Xresolution(NumberofPixels),
 	.hsync(hsync), 
 	.vsync(vsync), 
 	.xpos(xpos), 

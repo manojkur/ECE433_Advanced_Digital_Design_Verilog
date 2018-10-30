@@ -13,9 +13,10 @@ BackPorch, vsync, yposition, hsync, Reset, Clock);
 
 parameter yresolution=10;
 input [yresolution-1:0] SynchPulse, FrontPorch, ActiveVideo, BackPorch;
-input Reset, Clock, LineEnd, hsync;
+input Reset, Clock, hsync;
+output LineEnd;
 output vsync;
-output [yresolution-1:0] yposition;
+output reg [yresolution-1:0] yposition;
 wire [yresolution-1:0] ycount;
 
 //hsynch starts next line
@@ -24,10 +25,11 @@ ClockedNegativeOneShot RestartUnit(LineEnd, NextLineOneShot, Reset, Clock);
 //to be completed by students
 
 ClockedNegativeOneShot LineClockUnit(hsync, LineClockOneShot, Reset, Clock);
-assign LineEnd=ycount==EndCount;	//Reset counter
 
-wire [xresolution-1:0] EndCount=SynchPulse+FrontPorch+ActiveVideo+BackPorch;
-assign hsync = ~(ycount>= (ActiveVideo+FrontPorch) && ycount<=(ActiveVideo+FrontPorch+SynchPulse));
+assign LineEnd= ycount==EndCount;	//Reset counter
+
+wire [yresolution-1:0] EndCount=SynchPulse+FrontPorch+ActiveVideo+BackPorch;
+assign vsync = ~(ycount> (ActiveVideo+FrontPorch) && ycount<=(ActiveVideo+FrontPorch+SynchPulse));
 
 always@(ycount, SynchPulse, BackPorch, ActiveVideo, FrontPorch) 
 	yposition<=ycount;	//the game circuit does not work if xposition does not run from 0 to 800. JJS

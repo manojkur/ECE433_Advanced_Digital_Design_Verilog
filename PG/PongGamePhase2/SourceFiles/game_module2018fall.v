@@ -15,15 +15,15 @@ module game_module2018fall(
 				output [3:0] green,
 				output [3:0] blue,
 				input Reset,
-				input clk25);
+				input Clock);
 		
 // paddle movement		
 reg [8:0] paddlePosition;
 reg [2:0] quadAr, quadBr;
-always @(posedge clk25) quadAr <= {quadAr[1:0], rota};
-always @(posedge clk25) quadBr <= {quadBr[1:0], rotb};
+always @(posedge Clock) quadAr <= {quadAr[1:0], rota};
+always @(posedge Clock) quadBr <= {quadBr[1:0], rotb};
 
-always @(posedge clk25)
+always @(posedge Clock)
 if(quadAr[2] ^ quadAr[1] ^ quadBr[2] ^ quadBr[1])
 begin
 	if(quadAr[2] ^ quadBr[1]) begin
@@ -44,7 +44,7 @@ reg bounceX, bounceY;
 	
 wire endOfFrame = (xpos == 0 && ypos == 480);
 	
-always @(posedge clk25) begin
+always @(posedge Clock) begin
 	if (endOfFrame) begin // update ball position at end of each frame
 		if (ballX == 0 && ballY == 0) begin // cheesy reset handling, assumes initial value of 0
 			ballX <= 480;
@@ -83,7 +83,7 @@ assign green = { !missed && (border || paddle || ball), 3'b000 };
 assign blue  = { !missed && (border || ball), background && checkerboard, background && !checkerboard, background && !checkerboard  }; 
 		
 // ball collision	
-always @(posedge clk25) begin
+always @(posedge Clock) begin
 	if (!endOfFrame) begin
 		if (ball && (left || right))
 			bounceX <= 1;

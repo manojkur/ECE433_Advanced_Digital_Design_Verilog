@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/New folder/ECE433_Advanced_Digital_Design_Verilog/PongGame2018/PongGamePhase2/SourceFiles/hsyncModule2018fall_tb.v";
+static const char *ng0 = "D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/New folder/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase2/SourceFiles/hsyncModule2018fall_tb.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {2, 0};
 static int ng3[] = {3, 0};
@@ -59,7 +59,7 @@ LAB0:    t1 = (t0 + 4128U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(10, ng0);
-    t2 = (t0 + 8780);
+    t2 = (t0 + 8760);
     t3 = *((char **)t2);
     t4 = ((((char*)(t3))) + 40U);
     t5 = *((char **)t4);
@@ -117,7 +117,7 @@ LAB0:    t1 = (t0 + 4376U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(11, ng0);
-    t2 = (t0 + 8804);
+    t2 = (t0 + 8784);
     t3 = *((char **)t2);
     t4 = ((((char*)(t3))) + 40U);
     t5 = *((char **)t4);

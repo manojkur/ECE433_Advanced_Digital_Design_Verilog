@@ -15,7 +15,20 @@ input [SystemClockSize-1:0] CRTClockFreq;
 output reg	PixelClock;
 input Reset, Clock;
 
-//a counter is needed to generate PixelClock
+reg [15:0] 	pixel_count;
 
+//a counter is needed to generate PixelClock
+ always @(posedge Clock)
+	if(Reset==1) begin pixel_count <= 1'b0;
+				PixelClock <= 1'b1;
+					end
+	//	else if (pixel_count == 8) 
+	else
+		if (pixel_count == SystemClockFreq/(CRTClockFreq*2)) begin
+			pixel_count <= 1'b1;
+			PixelClock <= !PixelClock;
+		end else begin
+					pixel_count <= pixel_count + 1'b1;
+			end
 endmodule
 

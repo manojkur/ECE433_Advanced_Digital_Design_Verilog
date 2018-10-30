@@ -21,12 +21,12 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/New folder/ECE433_Advanced_Digital_Design_Verilog/PongGame2018/PongGamePhase2/SourceFiles/hsyncModule2018fall.v";
+static const char *ng0 = "D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/New folder/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase2/SourceFiles/vsyncModule2018fall.v";
 static unsigned int ng1[] = {0U, 0U};
 
 
 
-static void Cont_25_0(char *t0)
+static void Cont_28_0(char *t0)
 {
     char t5[8];
     char *t1;
@@ -69,7 +69,7 @@ LAB0:    t1 = (t0 + 4904U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(25, ng0);
+LAB2:    xsi_set_current_line(28, ng0);
     t2 = (t0 + 2624U);
     t3 = *((char **)t2);
     t2 = (t0 + 2784U);
@@ -127,7 +127,7 @@ LAB6:    t19 = (t5 + 4);
 
 }
 
-static void NetDecl_26_1(char *t0)
+static void NetDecl_30_1(char *t0)
 {
     char t5[8];
     char t7[8];
@@ -159,7 +159,7 @@ LAB0:    t1 = (t0 + 5152U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(26, ng0);
+LAB2:    xsi_set_current_line(30, ng0);
     t2 = (t0 + 1184U);
     t3 = *((char **)t2);
     t2 = (t0 + 1344U);
@@ -199,7 +199,7 @@ LAB2:    xsi_set_current_line(26, ng0);
 LAB1:    return;
 }
 
-static void Cont_29_2(char *t0)
+static void Cont_31_2(char *t0)
 {
     char t3[8];
     char t7[8];
@@ -312,7 +312,7 @@ LAB0:    t1 = (t0 + 5400U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(29, ng0);
+LAB2:    xsi_set_current_line(31, ng0);
     t2 = (t0 + 2624U);
     t4 = *((char **)t2);
     t2 = (t0 + 1504U);
@@ -330,10 +330,8 @@ LAB4:    t9 = (t7 + 4);
     if (*((unsigned int *)t9) != 0)
         goto LAB5;
 
-LAB8:    if (*((unsigned int *)t4) < *((unsigned int *)t7))
-        goto LAB7;
-
-LAB6:    *((unsigned int *)t8) = 1;
+LAB8:    if (*((unsigned int *)t4) > *((unsigned int *)t7))
+        goto LAB6;
 
 LAB7:    memset(t11, 0, 8);
     t12 = (t8 + 4);
@@ -413,6 +411,9 @@ LAB1:    return;
 LAB5:    t10 = (t8 + 4);
     *((unsigned int *)t8) = 1;
     *((unsigned int *)t10) = 1;
+    goto LAB7;
+
+LAB6:    *((unsigned int *)t8) = 1;
     goto LAB7;
 
 LAB9:    *((unsigned int *)t11) = 1;
@@ -534,7 +535,7 @@ LAB33:    t84 = *((unsigned int *)t3);
 
 }
 
-static void Always_31_3(char *t0)
+static void Always_33_3(char *t0)
 {
     char *t1;
     char *t2;
@@ -549,7 +550,7 @@ LAB0:    t1 = (t0 + 5648U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(31, ng0);
+LAB2:    xsi_set_current_line(33, ng0);
     t2 = (t0 + 6760);
     *((int *)t2) = 1;
     t3 = (t0 + 5680);
@@ -557,7 +558,7 @@ LAB2:    xsi_set_current_line(31, ng0);
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(32, ng0);
+LAB4:    xsi_set_current_line(34, ng0);
     t4 = (t0 + 2624U);
     t5 = *((char **)t4);
     t4 = (t0 + 3984);
@@ -740,7 +741,7 @@ LAB0:    t1 = (t0 + 6392U);
 
 LAB3:    goto *t2;
 
-LAB2:    t2 = (t0 + 2464U);
+LAB2:    t2 = (t0 + 2144U);
     t3 = *((char **)t2);
     memset(t4, 0, 8);
     t2 = (t3 + 4);
@@ -796,7 +797,7 @@ LAB6:    t10 = (t4 + 4);
     *((unsigned int *)t10) = 1;
     goto LAB7;
 
-LAB8:    t16 = (t0 + 2944U);
+LAB8:    t16 = (t0 + 3104U);
     t17 = *((char **)t16);
     memset(t18, 0, 8);
     t16 = (t17 + 4);
@@ -862,9 +863,9 @@ LAB15:    t37 = *((unsigned int *)t25);
 }
 
 
-extern void work_m_00000000002189908429_4084447799_init()
+extern void work_m_00000000001698500092_1614170950_init()
 {
-	static char *pe[] = {(void *)Cont_25_0,(void *)NetDecl_26_1,(void *)Cont_29_2,(void *)Always_31_3,(void *)implSig1_execute,(void *)implSig2_execute,(void *)implSig3_execute};
-	xsi_register_didat("work_m_00000000002189908429_4084447799", "isim/hsyncModule2018fall_tb_isim_beh.exe.sim/work/m_00000000002189908429_4084447799.didat");
+	static char *pe[] = {(void *)Cont_28_0,(void *)NetDecl_30_1,(void *)Cont_31_2,(void *)Always_33_3,(void *)implSig1_execute,(void *)implSig2_execute,(void *)implSig3_execute};
+	xsi_register_didat("work_m_00000000001698500092_1614170950", "isim/CRTcontroller2018fall_tb_isim_beh.exe.sim/work/m_00000000001698500092_1614170950.didat");
 	xsi_register_executes(pe);
 }
