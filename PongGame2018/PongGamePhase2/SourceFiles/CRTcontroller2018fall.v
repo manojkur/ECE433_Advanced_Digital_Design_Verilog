@@ -14,7 +14,7 @@
 // vsync <= ~(yposos == 490 || yposos == 491);   // active for lines 490 and 491
 
 module CRTcontroller2018fall(SystemClockFreq, CRTClockFreq, Yresolution, 
-Xresolution,  hsync, vsync, xpos, ypos, reset, clock);
+Xresolution,  hsync, vsync, xpos, ypos, Reset, Clock);
 parameter ResolutionSize=10, SystemClockSize=10;
 input [ResolutionSize-1:0] Xresolution, Yresolution;
 input [SystemClockSize-1:0] SystemClockFreq, CRTClockFreq;
@@ -37,8 +37,17 @@ wire PixelClock;
 //module hsyncModule2018fall(SynchPulse, BackPorch, ActiveVideo, FrontPorch, 
 //hsync, LineEnd, xposition, PixelClock, reset, clock);
 
-hsyncModule2018fall hsyncUnit(hSynchPulse, hBackPorch,  Xresolution, hFrontPorch, 
-hsync, LineEnd, xpos, PixelClock, reset, clock);
+hsyncModule2018fall hsyncUnit(
+	.hSynchPulse,
+	.hBackPorch,
+	.Xresolution,
+	.hFrontPorch,
+	.hsync, 
+	.LineEnd, 
+	.xpos, 
+	.PixelClock, 
+	.Reset, 
+	.Clock);
 
 //module vsyncModule2018fallTemplate(LineEnd, vSynchPulse, vFrontPorch, Yresolution, 
 //vBackPorch, vsync, ypos, reset, clock);
