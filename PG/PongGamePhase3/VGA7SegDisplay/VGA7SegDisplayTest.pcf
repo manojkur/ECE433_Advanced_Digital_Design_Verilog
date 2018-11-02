@@ -1,0 +1,26 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Nov 01 18:34:25 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rota" LOCATE = SITE "N10" LEVEL 1;
+COMP "rotb" LOCATE = SITE "P11" LEVEL 1;
+COMP "blue<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "reset" LOCATE = SITE "C9" LEVEL 1;
+COMP "vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "blue<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "Number1<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "Number1<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "Number1<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "Number1<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "clk100" LOCATE = SITE "V10" LEVEL 1;
+COMP "green<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "red<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "red<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "red<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "green<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "green<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "ClockLocked" LOCATE = SITE "U16" LEVEL 1;
+SCHEMATIC END;
+

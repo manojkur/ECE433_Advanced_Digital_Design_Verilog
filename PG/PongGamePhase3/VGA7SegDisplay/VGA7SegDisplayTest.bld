@@ -1,0 +1,38 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf
+-p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd
+
+Reading NGO file "D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/New
+folder/ECE433_Advanced_Digital_Design_Verilog/lab7p2/VGA7SegDisplay/VGA7SegDispl
+ayTest.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "VGA7SegDisplayTest.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 4419748 kilobytes
+
+Writing NGD file "VGA7SegDisplayTest.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "VGA7SegDisplayTest.bld"...

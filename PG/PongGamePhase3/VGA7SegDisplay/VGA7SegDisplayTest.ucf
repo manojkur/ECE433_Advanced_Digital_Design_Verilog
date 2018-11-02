@@ -1,0 +1,43 @@
+//Nexys3 Board for VGA pong game
+//with a 7-segment display
+# CLK - 100MHz oscillator
+NET "clk100" LOC = V10;
+
+//BTND
+NET "reset" LOC = C9;	//BTND
+NET "rota" LOC = N10;	//JA3
+NET "rotb" LOC = P11;	//JA4
+
+//4-bit Number on Slide Switches SW3-0
+NET "Number1[3]" LOC = M8;	//SW3
+NET "Number1[2]" LOC = V9;	//SW2
+NET "Number1[1]" LOC = T9;	//SW1
+NET "Number1[0]" LOC = T10;	//SW0
+
+NET "ClockLocked" LOC = U16;	//LD0
+NET "blue[1]" LOC = T7;	
+NET "blue[0]" LOC = R7;
+NET "green[2]" LOC = V6;
+NET "green[1]" LOC = T6;
+NET "green[0]" LOC = P8;
+NET "red[2]" LOC = N7;
+NET "red[1]" LOC = V7;
+NET "red[0]" LOC = U7;
+NET "hsync" LOC = N6;
+NET "vsync" LOC = P7;
+
+NET "blue[1]" IOSTANDARD = LVCMOS33;
+NET "blue[0]" IOSTANDARD = LVCMOS33;
+NET "green[2]" IOSTANDARD = LVCMOS33;
+NET "green[1]" IOSTANDARD = LVCMOS33;
+NET "green[0]" IOSTANDARD = LVCMOS33;
+NET "red[2]" IOSTANDARD = LVCMOS33;
+NET "red[1]" IOSTANDARD = LVCMOS33;
+NET "red[0]" IOSTANDARD = LVCMOS33;
+NET "hsync" IOSTANDARD = LVCMOS33;
+NET "vsync" IOSTANDARD = LVCMOS33;
+NET "ClockLocked" IOSTANDARD = LVCMOS33;
+NET "reset" IOSTANDARD = LVCMOS33;
+NET "rota" IOSTANDARD = LVCMOS33;
+NET "rotb" IOSTANDARD = LVCMOS33;
+NET "clk100" IOSTANDARD = LVCMOS33;

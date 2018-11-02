@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="Number1">
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="red">
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="green">
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="blue">
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="clk100" Dir="IN"/>
+		<Port Id="reset" Dir="IN"/>
+		<Port Id="rota" Dir="IN"/>
+		<Port Id="rotb" Dir="IN"/>
+		<Port Id="ClockLocked" Dir="OUT"/>
+		<Port Id="hsync" Dir="OUT"/>
+		<Port Id="vsync" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

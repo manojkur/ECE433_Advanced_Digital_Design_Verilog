@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu May 14 14:54:34 2015
+# Process ID: 6116
+# Log file: C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin M8 [get_ports {Number1[3]}]
+endgroup
+save_constraints

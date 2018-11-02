@@ -1,0 +1,515 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: LocationUpdate.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LocationUpdate.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LocationUpdate"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : LocationUpdate
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\song\jjsong\ece333\ece333spring2015\lectures2015spring\lecture22SevenSegVGA\VGA7SegDisplay\DelayTimer.v" into library work
+Parsing module <DelayTimer>.
+Analyzing Verilog file "C:\Users\song\jjsong\ece333\ece333spring2015\lectures2015spring\lecture22SevenSegVGA\VGA7SegDisplay\LocationUpdate.v" into library work
+Parsing module <LocationUpdate>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <LocationUpdate>.
+
+Elaborating module <DelayTimer>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <LocationUpdate>.
+    Related source file is "C:\Users\song\jjsong\ece333\ece333spring2015\lectures2015spring\lecture22SevenSegVGA\VGA7SegDisplay\LocationUpdate.v".
+    Found 10-bit register for signal <Digit1Y>.
+    Found 10-bit register for signal <Digit1X>.
+    Found 11-bit adder for signal <n0024> created at line 11.
+    Found 11-bit adder for signal <n0025> created at line 11.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <LocationUpdate> synthesized.
+
+Synthesizing Unit <DelayTimer>.
+    Related source file is "C:\Users\song\jjsong\ece333\ece333spring2015\lectures2015spring\lecture22SevenSegVGA\VGA7SegDisplay\DelayTimer.v".
+        Divider = 40000000
+        NumberOfBits = 27
+    Found 27-bit register for signal <count>.
+    Found 27-bit adder for signal <count[26]_GND_2_o_add_4_OUT> created at line 23.
+    Found 27-bit comparator greater for signal <n0002> created at line 22
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <DelayTimer> synthesized.
+
+Synthesizing Unit <mod_11u_10u>.
+    Related source file is "".
+    Found 21-bit adder for signal <GND_3_o_b[9]_add_1_OUT> created at line 0.
+    Found 20-bit adder for signal <GND_3_o_b[9]_add_3_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_3_o_b[9]_add_5_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_3_o_b[9]_add_7_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_3_o_b[9]_add_9_OUT> created at line 0.
+    Found 16-bit adder for signal <GND_3_o_b[9]_add_11_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_3_o_b[9]_add_13_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_3_o_b[9]_add_15_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_3_o_b[9]_add_17_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_3_o_b[9]_add_19_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_b[9]_add_21_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_3_o_add_23_OUT> created at line 0.
+    Found 21-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Summary:
+	inferred  12 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+	inferred 122 Multiplexer(s).
+Unit <mod_11u_10u> synthesized.
+
+Synthesizing Unit <mod_11u_9u>.
+    Related source file is "".
+    Found 20-bit adder for signal <GND_4_o_b[8]_add_1_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_4_o_b[8]_add_3_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_4_o_b[8]_add_5_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_4_o_b[8]_add_7_OUT> created at line 0.
+    Found 16-bit adder for signal <GND_4_o_b[8]_add_9_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_4_o_b[8]_add_11_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_4_o_b[8]_add_13_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_4_o_b[8]_add_15_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_4_o_b[8]_add_17_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_b[8]_add_19_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_4_o_add_21_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_4_o_add_23_OUT> created at line 0.
+    Found 20-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Summary:
+	inferred  12 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+	inferred 122 Multiplexer(s).
+Unit <mod_11u_9u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 27
+ 11-bit adder                                          : 7
+ 12-bit adder                                          : 2
+ 13-bit adder                                          : 2
+ 14-bit adder                                          : 2
+ 15-bit adder                                          : 2
+ 16-bit adder                                          : 2
+ 17-bit adder                                          : 2
+ 18-bit adder                                          : 2
+ 19-bit adder                                          : 2
+ 20-bit adder                                          : 2
+ 21-bit adder                                          : 1
+ 27-bit adder                                          : 1
+# Registers                                            : 3
+ 10-bit register                                       : 2
+ 27-bit register                                       : 1
+# Comparators                                          : 25
+ 11-bit comparator lessequal                           : 5
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator lessequal                           : 2
+ 14-bit comparator lessequal                           : 2
+ 15-bit comparator lessequal                           : 2
+ 16-bit comparator lessequal                           : 2
+ 17-bit comparator lessequal                           : 2
+ 18-bit comparator lessequal                           : 2
+ 19-bit comparator lessequal                           : 2
+ 20-bit comparator lessequal                           : 2
+ 21-bit comparator lessequal                           : 1
+ 27-bit comparator greater                             : 1
+# Multiplexers                                         : 246
+ 1-bit 2-to-1 multiplexer                              : 242
+ 10-bit 2-to-1 multiplexer                             : 3
+ 9-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <DelayTimer>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <DelayTimer> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 26
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 24
+ 9-bit adder                                           : 1
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+# Comparators                                          : 25
+ 11-bit comparator lessequal                           : 5
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator lessequal                           : 2
+ 14-bit comparator lessequal                           : 2
+ 15-bit comparator lessequal                           : 2
+ 16-bit comparator lessequal                           : 2
+ 17-bit comparator lessequal                           : 2
+ 18-bit comparator lessequal                           : 2
+ 19-bit comparator lessequal                           : 2
+ 20-bit comparator lessequal                           : 2
+ 21-bit comparator lessequal                           : 1
+ 27-bit comparator greater                             : 1
+# Multiplexers                                         : 246
+ 1-bit 2-to-1 multiplexer                              : 242
+ 10-bit 2-to-1 multiplexer                             : 3
+ 9-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <LocationUpdate> ...
+WARNING:Xst:1710 - FF/Latch <TimerUnit/count_26> (without init value) has a constant value of 0 in block <LocationUpdate>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block LocationUpdate, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 46
+ Flip-Flops                                            : 46
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : LocationUpdate.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 150
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 25
+#      LUT2                        : 29
+#      LUT3                        : 8
+#      LUT4                        : 3
+#      LUT5                        : 12
+#      LUT6                        : 18
+#      MUXCY                       : 25
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 46
+#      FD                          : 26
+#      FDE                         : 20
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 41
+#      IBUF                        : 21
+#      OBUF                        : 20
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              46  out of  18224     0%  
+ Number of Slice LUTs:                   96  out of   9112     1%  
+    Number used as Logic:                96  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     96
+   Number with an unused Flip Flop:      50  out of     96    52%  
+   Number with an unused LUT:             0  out of     96     0%  
+   Number of fully used LUT-FF pairs:    46  out of     96    47%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          42
+ Number of bonded IOBs:                  42  out of    232    18%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 46    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.075ns (Maximum Frequency: 245.378MHz)
+   Minimum input arrival time before clock: 4.317ns
+   Maximum output required time after clock: 3.820ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 4.075ns (frequency: 245.378MHz)
+  Total number of paths / destination ports: 1670 / 65
+-------------------------------------------------------------------------
+Delay:               4.075ns (Levels of Logic = 2)
+  Source:            TimerUnit/count_6 (FF)
+  Destination:       Digit1Y_0 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: TimerUnit/count_6 to Digit1Y_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.981  TimerUnit/count_6 (TimerUnit/count_6)
+     LUT6:I0->O            1   0.203   0.827  _n0033_inv3 (_n0033_inv3)
+     LUT6:I2->O           20   0.203   1.092  _n0033_inv6 (_n0033_inv)
+     FDE:CE                    0.322          Digit1Y_0
+    ----------------------------------------
+    Total                      4.075ns (1.175ns logic, 2.900ns route)
+                                       (28.8% logic, 71.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 60 / 40
+-------------------------------------------------------------------------
+Offset:              4.317ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       Digit1Y_0 (FF)
+  Destination Clock: clock rising
+
+  Data Path: reset to Digit1Y_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   1.222   1.478  reset_IBUF (reset_IBUF)
+     LUT6:I0->O           20   0.203   1.092  _n0033_inv6 (_n0033_inv)
+     FDE:CE                    0.322          Digit1Y_0
+    ----------------------------------------
+    Total                      4.317ns (1.747ns logic, 2.570ns route)
+                                       (40.5% logic, 59.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              3.820ns (Levels of Logic = 1)
+  Source:            Digit1X_2 (FF)
+  Destination:       Digit1X<2> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: Digit1X_2 to Digit1X<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              8   0.447   0.802  Digit1X_2 (Digit1X_2)
+     OBUF:I->O                 2.571          Digit1X_2_OBUF (Digit1X<2>)
+    ----------------------------------------
+    Total                      3.820ns (3.018ns logic, 0.802ns route)
+                                       (79.0% logic, 21.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    4.075|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.55 secs
+ 
+--> 
+
+Total memory usage is 262820 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

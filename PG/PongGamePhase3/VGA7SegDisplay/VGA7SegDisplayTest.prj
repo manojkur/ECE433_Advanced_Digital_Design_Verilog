@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/Clock25MHzGenerator.v"
+verilog work "DelayTimer.v"
+verilog work "VGA7SegDisplay.v"
+verilog work "Pong_Videotimer_Game.v"
+verilog work "LocationUpdate.v"
+verilog work "VGA7SegDisplayTest.v"

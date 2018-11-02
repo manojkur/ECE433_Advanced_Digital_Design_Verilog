@@ -1,0 +1,2 @@
+verilog work ../../Clock25MHzGenerator.v
+verilog work ../example_design/Clock25MHzGenerator_exdes.v

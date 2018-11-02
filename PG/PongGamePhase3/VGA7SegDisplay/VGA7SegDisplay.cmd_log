@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplay.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplay.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplay.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplay.syr" 

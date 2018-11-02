@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\lab7p2\VGA7SegDisplay\VGA7SegDisplayTest.ncd
+OUTFILE=D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\lab7p2\VGA7SegDisplay\VGA7SegDisplayTest.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\My Files\Classwork\3-Junior\1-Fall Quarter\ECE433\git\New folder\ECE433_Advanced_Digital_Design_Verilog\lab7p2\VGA7SegDisplay
+LICENSE=WebPack
+USER_INFO=174114502_1777496879_210571720_868

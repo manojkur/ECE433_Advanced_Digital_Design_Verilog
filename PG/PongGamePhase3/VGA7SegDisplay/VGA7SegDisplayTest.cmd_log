@@ -1,0 +1,127 @@
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 VGA7SegDisplayTest.ngc VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+xst -intstyle ise -ifn "D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/New folder/ECE433_Advanced_Digital_Design_Verilog/lab7p2/VGA7SegDisplay/VGA7SegDisplayTest.xst" -ofn "D:/My Files/Classwork/3-Junior/1-Fall Quarter/ECE433/git/New folder/ECE433_Advanced_Digital_Design_Verilog/lab7p2/VGA7SegDisplay/VGA7SegDisplayTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc VGA7SegDisplayTest.ucf -p xc6slx16-csg324-3 "VGA7SegDisplayTest.ngc" VGA7SegDisplayTest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ngd VGA7SegDisplayTest.pcf 
+par -w -intstyle ise -ol high -mt off VGA7SegDisplayTest_map.ncd VGA7SegDisplayTest.ncd VGA7SegDisplayTest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA7SegDisplayTest.twx VGA7SegDisplayTest.ncd -o VGA7SegDisplayTest.twr VGA7SegDisplayTest.pcf -ucf VGA7SegDisplayTest.ucf 
+bitgen -intstyle ise -f VGA7SegDisplayTest.ut VGA7SegDisplayTest.ncd 

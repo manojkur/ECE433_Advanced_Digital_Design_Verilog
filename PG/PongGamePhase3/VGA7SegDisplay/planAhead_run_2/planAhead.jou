@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu May 14 15:05:33 2015
+# Process ID: 9032
+# Log file: C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/song/jjsong/ece333/ece333spring2015/lectures2015spring/lecture22SevenSegVGA/VGA7SegDisplay/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS33 [get_ports [list ClockLocked]]
+set_property iostandard LVCMOS33 [get_ports [list reset]]
+set_property iostandard LVCMOS33 [get_ports [list rota]]
+set_property iostandard LVCMOS33 [get_ports [list rotb]]
+set_property iostandard LVCMOS33 [get_ports [list clk100]]
+set_property iostandard LVCMOS33 [get_ports [list {Number1[3]} {Number1[2]} {Number1[1]} {Number1[0]}]]
+undo
+save_constraints
