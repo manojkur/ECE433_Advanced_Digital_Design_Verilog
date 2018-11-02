@@ -13,12 +13,12 @@
 //based on pong from http://www.bigmessowires.com/2009/06/21/fpga-pong/. 
 
 module PongGame2018fall_JJS_JJS(
-   input Clock, Reset, rota1, rotb1, rota2, rotb2,
+   input Clock, Reset, rota1, rotb1, rota2, rotb2, PlaySound,
     output [3:0] red,
     output [3:0] green,
     output [3:0] blue,
     output hsync, vsync,
-	 output Speaker
+	output Speaker
     );
 
 wire [9:0] xpos;
@@ -50,25 +50,6 @@ CRTcontroller2018fall VGAdisplay(
 wire hit1, point_reset1, hit2, point_reset2;
 wire [8:0] paddlePosition1, paddlePosition2;
 
-/* module game_module2018fall(
-				input [9:0] xpos,
-				input [9:0] ypos,
-				input rota1,
-				input rotb1,
-				input rota2,
-				input rotb2,
-				output [3:0] red,
-				output [3:0] green,
-				output [3:0] blue,
-				output reg [8:0] paddlePosition1,
-				output reg [8:0] paddlePosition2,
-				output reg hit1,
-				output reg point_reset1,
-				output reg hit2,
-				output reg point_reset2,
-				input Reset,
-				input Clock);
-*/
 game_module2018fall gameUnit(
 	.xpos(xpos), 
 	.ypos(ypos), 
@@ -121,7 +102,7 @@ ClockedPositiveOneShot pointresetOneShot2(
 
 //module PlaySound(PlayAgain, Speaker, Reset, Clock100MHz);
 PlaySound failSound(
-	.PlayAgain(point_reset1), 
+	.PlayAgain(PlaySound), 
 	.Speaker(Speaker), 
 	.Reset(Reset), 
 	.Clock100MHz(Clock));

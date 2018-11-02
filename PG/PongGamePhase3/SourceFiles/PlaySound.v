@@ -25,10 +25,9 @@ parameter DataLength=4;
 wire [2:0] NoteArray;	//three notes
 wire [DataLength-1:0] KeyOutput, TimeOutput;
 wire [AddressBits-1:0] ReadingAddress;
-wire EndofScore, DebouncedPlayAgain, OneShotPlayAgain;
+wire EndofScore, OneShotPlayAgain;
 
-Debouncer PlayDebounce(PlayAgain, DebouncedPlayAgain, Reset, Clock);
-ClockedOneShot PlayOneShot(DebouncedPlayAgain, OneShotPlayAgain, Reset, Clock);
+ClockedOneShot PlayOneShot(PlayAgain, OneShotPlayAgain, Reset, Clock);
 
 //module MusicSheetReader(Start, EndofScore, StartAddress, KeyOutput, TimeOutput, CurrentAddress, EndofNote, Clock, Reset);
 MusicSheetReader Reader(OneShotPlayAgain, EndofScore, 5'd0 , KeyOutput, ReadingAddress, Over, Clock, Reset);
