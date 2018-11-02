@@ -65,6 +65,11 @@ reg [9:0] ballX;
 reg [8:0] ballY;
 reg ballXdir, ballYdir;
 reg bounceX, bounceY;
+
+reg [9:0] death_ballX;
+reg [8:0] death_ballY;
+reg death_ballXdir, death_ballYdir;
+reg death_bounceX, death_bounceY;
 	
 wire endOfFrame = (xpos == 0 && ypos == 480);
 	
@@ -86,8 +91,29 @@ always @(posedge Clock) begin
 				ballY <= ballY - 2'd2;	
 		end
 	end	
+end
+
+always @(posedge Clock) begin
+	if (endOfFrame) begin // update ball position at end of each frame
+		if (death_ballX == 0 && death_ballY == 0) begin // cheesy reset handling, assumes initial value of 0
+			death_ballX <= 480;
+			death_ballY <= 300;
+		end
+		else begin
+			if (death_ballXdir ^ death_bounceX) 
+				death_ballX <= death_ballX + 2'd2;
+			else 
+				death_ballX <= death_ballX - 2'd2;	
+
+			if (death_ballYdir ^ death_bounceY) 
+				death_ballY <= death_ballY + 2'd2;
+			else
+				death_ballY <= death_ballY - 2'd2;	
+		end
+	end	
 end		
-		
+
+// sliding background
 wire Slide;
 reg [5:0] NumSlide;
 
@@ -112,13 +138,14 @@ wire border = (visible && (left || right));
 wire paddle1 = (xpos >= paddlePosition1+4 && xpos <= paddlePosition1+124 && ypos >= 430 && ypos <= 437);
 wire paddle2 = (xpos >= paddlePosition2+4 && xpos <= paddlePosition2+124 && ypos >= 50 && ypos <= 57);
 wire ball = (xpos >= ballX && xpos <= ballX+7 && ypos >= ballY && ypos <= ballY+7);
-wire background = (visible && !(border || paddle1 || paddle2 || ball));
+wire death_ball = (xpos >= death_ballX && xpos <= death_ballX+7 && ypos >= death_ballY && ypos <= death_ballY+7);
+wire background = (visible && !(border || paddle1 || paddle2 || ball || death_ball));
 wire [9:0] xposSlide = xpos+NumSlide;
 wire [9:0] yposSlide = ypos+NumSlide;
 wire checkerboard = (xposSlide[5] ^ yposSlide[5]);
 wire missed = visible && missTimer != 0;
 
-assign red   = { (missed || border || paddle1 || paddle2) , 3'b000 };
+assign red   = { (missed || border || paddle1 || paddle2 || death_ball) , 3'b000 };
 assign green = { !missed && (border || paddle1 || paddle2 || ball), 3'b000 };
 assign blue  = { (!missed && (border || ball)), background && checkerboard, background && checkerboard, background && checkerboard }; 
 
@@ -169,5 +196,52 @@ always @(posedge Clock) begin
 		end
 	end
 end
-		
+
+always @(posedge Clock) begin
+	if (!endOfFrame) begin
+		if (death_ball && (left || right))
+			death_bounceX <= 1;
+		if (death_ball && (top || bottom || (paddle1 && death_ballYdir) || (paddle2 && ~death_ballYdir)))
+			begin
+				death_bounceY <= 1;
+				if (paddle1 && death_ballYdir)
+					point_reset1 <= 1;
+				if (paddle2 && ~death_ballYdir)
+					point_reset2 <= 1;
+			end
+		if (death_ball && bottom)
+			begin
+				missTimer <= 63;
+				point_reset1 <=1;
+			end
+		if (death_ball && top)
+			begin
+				missTimer <= 63;
+				point_reset2 <=1;
+			end
+	end
+	else begin
+		hit1 <= 0;
+		point_reset1 <=0;
+		hit2 <= 0;
+		point_reset2 <=0;
+		if (ballX == 0 && ballY == 0) begin // cheesy reset handling, assumes initial value of 0
+			ballXdir <= 1;
+			ballYdir <= 1;
+			bounceX <= 0;
+			bounceY <= 0;
+		end 
+		else begin
+			if (bounceX)
+				ballXdir <= ~ballXdir;
+			if (bounceY)
+				ballYdir <= ~ballYdir;			
+			bounceX <= 0;
+			bounceY <= 0;
+			if (missTimer != 0)
+				missTimer <= missTimer - 2'd1;
+		end
+	end
+end
+	
 endmodule
