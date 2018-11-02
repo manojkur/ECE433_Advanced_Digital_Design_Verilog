@@ -5,7 +5,7 @@ NET "rota1" LOC = P11;//JA4
 NET "rotb1" LOC = N10;//JA3
 NET "rota2" LOC = E11;//JD4
 NET "rotb2" LOC = F11;//JD3
-
+NET "PlaySound" LOC = C4;
 NET "green[1]" LOC = P8;
 NET "green[2]" LOC = T6;
 NET "green[3]" LOC = V6;
