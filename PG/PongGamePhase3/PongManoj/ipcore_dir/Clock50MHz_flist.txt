@@ -52,3 +52,4 @@ Clock50MHz\simulation\timing\vcs_session.tcl
 Clock50MHz\simulation\timing\wave.do
 Clock50MHz_flist.txt
 Clock50MHz_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

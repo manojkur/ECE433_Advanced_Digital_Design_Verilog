@@ -11,30 +11,52 @@ module game_module2018fall(
 				input [9:0] ypos,
 				input rota1,
 				input rotb1,
+				input rota2,
+				input rotb2,
 				output [3:0] red,
 				output [3:0] green,
 				output [3:0] blue,
-				output reg [8:0] paddlePosition,
-				output reg hit,
-				output reg point_reset,
+				output reg [8:0] paddlePosition1,
+				output reg [8:0] paddlePosition2,
+				output reg hit1,
+				output reg point_reset1,
+				output reg hit2,
+				output reg point_reset2,
 				input Reset,
 				input Clock);
 		
 // paddle movement		
-reg [2:0] quadAr, quadBr;
-always @(posedge Clock) quadAr <= {quadAr[1:0], rota};
-always @(posedge Clock) quadBr <= {quadBr[1:0], rotb};
+reg [2:0] quadA1r, quadB1r;
+always @(posedge Clock) quadA1r <= {quadA1r[1:0], rota1};
+always @(posedge Clock) quadB1r <= {quadB1r[1:0], rotb1};
 
 always @(posedge Clock)
-if(quadAr[2] ^ quadAr[1] ^ quadBr[2] ^ quadBr[1])
+if(quadA1r[2] ^ quadA1r[1] ^ quadB1r[2] ^ quadB1r[1])
 begin
-	if(quadAr[2] ^ quadBr[1]) begin
-		if(paddlePosition < 508)        // make sure the value doesn't overflow
-			paddlePosition <= paddlePosition + 3'd4;
+	if(quadA1r[2] ^ quadB1r[1]) begin
+		if(paddlePosition1 < 508)        // make sure the value doesn't overflow
+			paddlePosition1 <= paddlePosition1 + 3'd4;
 	end
 	else begin
-		if(paddlePosition > 3)        // make sure the value doesn't underflow
-			paddlePosition <= paddlePosition - 3'd4;
+		if(paddlePosition1 > 3)        // make sure the value doesn't underflow
+			paddlePosition1 <= paddlePosition1 - 3'd4;
+	end
+end
+
+reg [2:0] quadA2r, quadB2r;
+always @(posedge Clock) quadA2r <= {quadA2r[1:0], rota2};
+always @(posedge Clock) quadB2r <= {quadB2r[1:0], rotb2};
+
+always @(posedge Clock)
+if(quadA2r[2] ^ quadA2r[1] ^ quadB2r[2] ^ quadB2r[1])
+begin
+	if(quadA2r[2] ^ quadB2r[1]) begin
+		if(paddlePosition2 < 508)        // make sure the value doesn't overflow
+			paddlePosition2 <= paddlePosition2 + 3'd4;
+	end
+	else begin
+		if(paddlePosition2 > 3)        // make sure the value doesn't underflow
+			paddlePosition2 <= paddlePosition2 - 3'd4;
 	end
 end
 		
@@ -66,54 +88,69 @@ always @(posedge Clock) begin
 	end	
 end		
 		
+wire Slide;
+reg [5:0] NumSlide;
+
+//module Pulse1second(Reset,Pulse1s,Clock);
+Pulse1second pulseUnit(
+	.Reset(Reset),
+	.Pulse1s(Slide),
+	.Clock(Clock));
+
+always @(posedge Slide) begin
+	NumSlide = NumSlide == 0 ? 31: NumSlide - 1;
+end
+
 // pixel color	
 reg [5:0] missTimer;	
 wire visible = (xpos < 640 && ypos < 480);
-wire top = (visible && ypos <= 10);
+wire top = (visible && ypos == 0);
 wire bottom = (visible && ypos >= 476);
-wire left = (visible && xpos <= 10);
+wire left = (visible && xpos <= 7);
 wire right = (visible && xpos >= 630);
-wire border = (visible && (left || right || top));
-wire paddle = (xpos >= paddlePosition+4 && xpos <= paddlePosition+124 && ypos >= 430 && ypos <= 437);
+wire border = (visible && (left || right));
+wire paddle1 = (xpos >= paddlePosition1+4 && xpos <= paddlePosition1+124 && ypos >= 430 && ypos <= 437);
+wire paddle2 = (xpos >= paddlePosition2+4 && xpos <= paddlePosition2+124 && ypos >= 50 && ypos <= 57);
 wire ball = (xpos >= ballX && xpos <= ballX+7 && ypos >= ballY && ypos <= ballY+7);
-wire background = (visible && !(border || paddle || ball));
-wire checkerboard = (xpos[5] ^ ypos[5]);
+wire background = (visible && !(border || paddle1 || paddle2 || ball));
+wire [9:0] xposSlide = xpos+NumSlide;
+wire [9:0] yposSlide = ypos+NumSlide;
+wire checkerboard = (xposSlide[5] ^ yposSlide[5]);
 wire missed = visible && missTimer != 0;
 
-assign red   = { missed || border || paddle, 3'b000 };
-assign green = { !missed && (border || paddle || ball), 3'b000 };
-assign blue  = { !missed && (border || ball), background && checkerboard, background && !checkerboard, background && !checkerboard  }; 
+assign red   = { (missed || border || paddle1 || paddle2) , 3'b000 };
+assign green = { !missed && (border || paddle1 || paddle2 || ball), 3'b000 };
+assign blue  = { (!missed && (border || ball)), background && checkerboard, background && checkerboard, background && checkerboard }; 
 
-//reg hit;
 // ball collision	
 always @(posedge Clock) begin
 	if (!endOfFrame) begin
 		if (ball && (left || right))
 			bounceX <= 1;
-		if (ball && (top || bottom || (paddle && ballYdir)))
+		if (ball && (top || bottom || (paddle1 && ballYdir) || (paddle2 && ~ballYdir)))
 			begin
 				bounceY <= 1;
-				if (paddle && ballYdir)
-					/*begin
-						hit <= 0;
-						ones <= ones == 9 ? 0 : ones + 1;
-						if(ones == 9) begin
-							tens <= tens == 9 ? 0 : tens + 1;
-						end
-					end*/
-					hit <= 1;
+				if (paddle1 && ballYdir)
+					hit1 <= 1;
+				if (paddle2 && ~ballYdir)
+					hit2 <= 1;
 			end
 		if (ball && bottom)
 			begin
 				missTimer <= 63;
-				point_reset <=1;
-				/*ones <= 0;
-				tens <= 0;*/
+				point_reset1 <=1;
+			end
+		if (ball && top)
+			begin
+				missTimer <= 63;
+				point_reset2 <=1;
 			end
 	end
 	else begin
-		hit <= 0;
-		point_reset <=0;
+		hit1 <= 0;
+		point_reset1 <=0;
+		hit2 <= 0;
+		point_reset2 <=0;
 		if (ballX == 0 && ballY == 0) begin // cheesy reset handling, assumes initial value of 0
 			ballXdir <= 1;
 			ballYdir <= 1;

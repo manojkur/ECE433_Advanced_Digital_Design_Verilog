@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/song/jjsong/ece333/ece333fall2014/lectures2014fall/lecture22Sound2014fall/PlaySound/PlaySound.xst" -ofn "C:/Users/song/jjsong/ece333/ece333fall2014/lectures2014fall/lecture22Sound2014fall/PlaySound/PlaySound.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc PlaySound.ucf -p xc6slx16-csg324-3 PlaySound.ngc PlaySound.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PlaySound_map.ncd PlaySound.ngd PlaySound.pcf 
+par -w -intstyle ise -ol high -mt off PlaySound_map.ncd PlaySound.ncd PlaySound.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PlaySound.twx PlaySound.ncd -o PlaySound.twr PlaySound.pcf -ucf PlaySound.ucf 
+bitgen -intstyle ise -f PlaySound.ut PlaySound.ncd 

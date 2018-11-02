@@ -1,0 +1,14 @@
+//Play Sound Module
+
+NET "Clock100MHz" LOC = V10;
+NET "PlayAgain" LOC = C4;
+NET "Reset" LOC = C9;
+
+//NET "Speaker" LOC = P11; //JA4
+
+NET "Speaker" LOC = E11; //JD4
+
+NET "Clock100MHz" IOSTANDARD = LVCMOS33;
+NET "PlayAgain" IOSTANDARD = LVCMOS33;
+NET "Reset" IOSTANDARD = LVCMOS33;
+NET "Speaker" IOSTANDARD = LVCMOS33;

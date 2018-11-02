@@ -1,0 +1,18 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Wed Nov 05 14:58:39 2014
+
+drc -z PlaySound.ncd PlaySound.pcf
+
+Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<clockUnit/dcm_sp_inst>.
+ 
+Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<clockUnit/dcm_sp_inst>
+and DESKEW(5). 
+Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<clockUnit/dcm_sp_inst>
+found no EXTERN driver in CLKFB path. 
+Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<clockUnit/dcm_sp_inst>
+found non-EXTERN block <BUFG> in CLKFB path. 
+Now executing Pdr_LogDcm_DeskewExtern::DoCheck for block<clockUnit/dcm_sp_inst>
+found NO extern 
+DRC detected 0 errors and 0 warnings.
