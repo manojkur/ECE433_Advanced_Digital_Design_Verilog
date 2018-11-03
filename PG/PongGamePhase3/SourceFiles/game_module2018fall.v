@@ -96,8 +96,8 @@ end
 always @(posedge Clock) begin
 	if (endOfFrame) begin // update ball position at end of each frame
 		if (death_ballX == 0 && death_ballY == 0) begin // cheesy reset handling, assumes initial value of 0
-			death_ballX <= 480;
-			death_ballY <= 300;
+			death_ballX <= 300;
+			death_ballY <= 480;
 		end
 		else begin
 			if (death_ballXdir ^ death_bounceX) 
@@ -145,9 +145,9 @@ wire [9:0] yposSlide = ypos+NumSlide;
 wire checkerboard = (xposSlide[5] ^ yposSlide[5]);
 wire missed = visible && missTimer != 0;
 
-assign red   = { (missed || border || paddle1 || paddle2 || death_ball) , 3'b000 };
-assign green = { !missed && (border || paddle1 || paddle2 || ball), 3'b000 };
-assign blue  = { (!missed && (border || ball)), background && checkerboard, background && checkerboard, background && checkerboard }; 
+assign red   = { (missed || border || paddle1 || paddle2 || death_ball) , death_ball, death_ball, death_ball};
+assign green = { !missed && (border || paddle1 || paddle2 || ball || death_ball), death_ball, death_ball, death_ball };
+assign blue  = { !missed && (border || death_ball), background && checkerboard || death_ball, background && checkerboard || death_ball, background && checkerboard || death_ball }; 
 
 // ball collision	
 always @(posedge Clock) begin
@@ -168,6 +168,16 @@ always @(posedge Clock) begin
 				point_reset1 <=1;
 			end
 		if (ball && top)
+			begin
+				missTimer <= 63;
+				point_reset2 <=1;
+			end
+		if (death_ball && (paddle1 && death_ballYdir))
+			begin
+				missTimer <= 63;
+				point_reset1 <=1;
+			end
+		if (death_ball && (paddle2 && ~death_ballYdir))
 			begin
 				missTimer <= 63;
 				point_reset2 <=1;
@@ -202,44 +212,22 @@ always @(posedge Clock) begin
 		if (death_ball && (left || right))
 			death_bounceX <= 1;
 		if (death_ball && (top || bottom || (paddle1 && death_ballYdir) || (paddle2 && ~death_ballYdir)))
-			begin
-				death_bounceY <= 1;
-				if (paddle1 && death_ballYdir)
-					point_reset1 <= 1;
-				if (paddle2 && ~death_ballYdir)
-					point_reset2 <= 1;
-			end
-		if (death_ball && bottom)
-			begin
-				missTimer <= 63;
-				point_reset1 <=1;
-			end
-		if (death_ball && top)
-			begin
-				missTimer <= 63;
-				point_reset2 <=1;
-			end
+			death_bounceY <= 1;
 	end
 	else begin
-		hit1 <= 0;
-		point_reset1 <=0;
-		hit2 <= 0;
-		point_reset2 <=0;
-		if (ballX == 0 && ballY == 0) begin // cheesy reset handling, assumes initial value of 0
-			ballXdir <= 1;
-			ballYdir <= 1;
-			bounceX <= 0;
-			bounceY <= 0;
+		if (death_ballX == 0 && death_ballY == 0) begin // cheesy reset handling, assumes initial value of 0
+			death_ballXdir <= 1;
+			death_ballYdir <= 1;
+			death_bounceX <= 0;
+			death_bounceY <= 0;
 		end 
 		else begin
-			if (bounceX)
-				ballXdir <= ~ballXdir;
-			if (bounceY)
-				ballYdir <= ~ballYdir;			
-			bounceX <= 0;
-			bounceY <= 0;
-			if (missTimer != 0)
-				missTimer <= missTimer - 2'd1;
+			if (death_bounceX)
+				death_ballXdir <= ~death_ballXdir;
+			if (death_bounceY)
+				death_ballYdir <= ~death_ballYdir;			
+			death_bounceX <= 0;
+			death_bounceY <= 0;
 		end
 	end
 end

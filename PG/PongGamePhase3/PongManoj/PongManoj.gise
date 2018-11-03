@@ -217,7 +217,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1541138111" xil_pn:in_ck="5000759817737371226" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="954618986437259927" xil_pn:start_ts="1541138092">
+    <transform xil_pn:end_ts="1541189952" xil_pn:in_ck="5000759817737371226" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="954618986437259927" xil_pn:start_ts="1541189938">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -235,11 +235,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1541135091" xil_pn:in_ck="1326679735668500516" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-812180874647355994" xil_pn:start_ts="1541135091">
+    <transform xil_pn:end_ts="1541188580" xil_pn:in_ck="1326679735668500516" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-812180874647355994" xil_pn:start_ts="1541188580">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1541138118" xil_pn:in_ck="267680329676536237" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3373689796111212439" xil_pn:start_ts="1541138111">
+    <transform xil_pn:end_ts="1541189957" xil_pn:in_ck="267680329676536237" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3373689796111212439" xil_pn:start_ts="1541189952">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="PongGame2018fall_JJS_JJS.bld"/>
@@ -248,12 +248,10 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1541138139" xil_pn:in_ck="267681736085154479" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1541138118">
+    <transform xil_pn:end_ts="1541189974" xil_pn:in_ck="267681736085154479" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1541189957">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PongGame2018fall_JJS_JJS.pcf"/>
       <outfile xil_pn:name="PongGame2018fall_JJS_JJS_map.map"/>
       <outfile xil_pn:name="PongGame2018fall_JJS_JJS_map.mrp"/>
@@ -264,7 +262,7 @@
       <outfile xil_pn:name="PongGame2018fall_JJS_JJS_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1541138164" xil_pn:in_ck="4542722057714864097" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1541138139">
+    <transform xil_pn:end_ts="1541189997" xil_pn:in_ck="4542722057714864097" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1541189974">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="PongGame2018fall_JJS_JJS.ncd"/>
@@ -278,7 +276,7 @@
       <outfile xil_pn:name="PongGame2018fall_JJS_JJS_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1541138185" xil_pn:in_ck="-6686926255659693730" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1541138164">
+    <transform xil_pn:end_ts="1541190017" xil_pn:in_ck="-6686926255659693730" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1541189997">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="PongGame2018fall_JJS_JJS.ut"/>
@@ -296,7 +294,7 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1541138164" xil_pn:in_ck="267496090147546535" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1541138159">
+    <transform xil_pn:end_ts="1541189997" xil_pn:in_ck="267496090147546535" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1541189992">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="PongGame2018fall_JJS_JJS.twr"/>

@@ -1,18 +1,18 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Nov 02 01:55:37 2018
+// Written by: Map P.20131013 on Fri Nov 02 16:19:32 2018
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "Speaker" LOCATE = SITE "E11" LEVEL 1;
+COMP "Speaker" LOCATE = SITE "L3" LEVEL 1;
 COMP "Clock" LOCATE = SITE "V10" LEVEL 1;
 COMP "blue<2>" LOCATE = SITE "R7" LEVEL 1;
 COMP "blue<3>" LOCATE = SITE "T7" LEVEL 1;
 COMP "Reset" LOCATE = SITE "C9" LEVEL 1;
 COMP "hsync" LOCATE = SITE "N6" LEVEL 1;
 COMP "rota1" LOCATE = SITE "P11" LEVEL 1;
-COMP "rota2" LOCATE = SITE "L3" LEVEL 1;
+COMP "rota2" LOCATE = SITE "E11" LEVEL 1;
 COMP "rotb1" LOCATE = SITE "N10" LEVEL 1;
-COMP "rotb2" LOCATE = SITE "L4" LEVEL 1;
+COMP "rotb2" LOCATE = SITE "F11" LEVEL 1;
 COMP "vsync" LOCATE = SITE "P7" LEVEL 1;
 COMP "green<3>" LOCATE = SITE "V6" LEVEL 1;
 COMP "red<1>" LOCATE = SITE "U7" LEVEL 1;
@@ -20,5 +20,6 @@ COMP "red<2>" LOCATE = SITE "V7" LEVEL 1;
 COMP "red<3>" LOCATE = SITE "N7" LEVEL 1;
 COMP "green<1>" LOCATE = SITE "P8" LEVEL 1;
 COMP "green<2>" LOCATE = SITE "T6" LEVEL 1;
+COMP "PlaySound" LOCATE = SITE "C4" LEVEL 1;
 SCHEMATIC END;
 
