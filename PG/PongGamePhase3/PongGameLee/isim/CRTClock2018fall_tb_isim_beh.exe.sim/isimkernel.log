@@ -1,0 +1,28 @@
+Command line:
+   CRTClock2018fall_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49659
+
+Tue Nov 06 11:47:34 2018
+
+
+ Elaboration Time: 0.328125 sec
+
+ Current Memory Usage: 1856.25 Meg
+
+ Total Signals          : 18
+ Total Nets             : 36
+ Total Signal Drivers   : 10
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 18
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 229
+
+ Total Simulation Time: 0.359375 sec
+
+ Current Memory Usage: 1856.25 Meg
+
+Tue Nov 06 11:47:47 2018
+

@@ -1,0 +1,18 @@
+ISim log file
+Running: C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\ECE433_Advanced_Digital_Design_Verilog\PG\PongGamePhase3\PongGameLee\CRTClock2018fall_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongGameLee/CRTClock2018fall_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+WARNING: File "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/SourceFiles/CRTClock2018fall_tb.v" Line 5.  For instance CRTClock2018fall_tb/uut/, width 10 of formal port SystemClockFreq is not equal to width 31 of actual variable SystemClock. 
+WARNING: File "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/SourceFiles/CRTClock2018fall_tb.v" Line 5.  For instance CRTClock2018fall_tb/uut/, width 10 of formal port CRTClockFreq is not equal to width 31 of actual variable CRTclock. 
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 800 ns :  in File "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/SourceFiles/CRTClock2018fall_tb.v" Line 17 

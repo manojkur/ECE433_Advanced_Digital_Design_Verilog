@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Nov  6 11:50:10 2018
+# Process ID: 8080
+# Current directory: C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongManoj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent39172 C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\ECE433_Advanced_Digital_Design_Verilog\PG\PongGamePhase3\PongManoj\CRTcontroller2018fall_tb_isim_beh.wdb
+# Log file: C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongManoj/vivado.log
+# Journal file: C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongManoj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {C:\Users\pakanalk\OneDrive - Rose-Hulman Institute of Technology\Class Files\jr_fall\ECE433\ECE433_Advanced_Digital_Design_Verilog\PG\PongGamePhase3\PongManoj\CRTcontroller2018fall_tb_isim_beh.wdb}

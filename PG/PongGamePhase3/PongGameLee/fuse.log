@@ -1,0 +1,26 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongGameLee/CRTcontroller2018fall_tb_isim_beh.exe -prj C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongGameLee/CRTcontroller2018fall_tb_beh.prj work.CRTcontroller2018fall_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongGameLee/../SourceFiles/UniversalCounter10bitsV5.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongGameLee/../SourceFiles/ClockedNegativeOneShot.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongGameLee/../SourceFiles/vsyncModule2018fall.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongGameLee/../SourceFiles/hsyncModule2018fall.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongGameLee/../SourceFiles/CRTClock2018Template.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongGameLee/../SourceFiles/CRTcontroller2018fall.v" into library work
+Analyzing Verilog file "C:/Users/pakanalk/OneDrive - Rose-Hulman Institute of Technology/Class Files/jr_fall/ECE433/ECE433_Advanced_Digital_Design_Verilog/PG/PongGamePhase3/PongGameLee/../SourceFiles/CRTcontrollerr2018fall_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module ClockedNegativeOneShot
+Compiling module UniversalCounter10bitsV5
+Compiling module hsyncModule2018fall
+Compiling module vsyncModule2018fallTemplate
+Compiling module CRTClock2018Template
+Compiling module CRTcontroller2018fall
+Compiling module CRTcontroller2018fall_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+FATAL_ERROR:Simulator:Fuse.cpp:209:1.133 - Failed to compile one of the generated C files. Please recompile with -mt off -v 1 switch to identify which design unit failed.  For technical support on this issue, please visit http://www.xilinx.com/support.

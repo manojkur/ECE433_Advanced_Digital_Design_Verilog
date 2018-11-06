@@ -129,16 +129,36 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1540928966" xil_pn:in_ck="-1893125989989297122" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1540928966">
+    <transform xil_pn:end_ts="1541523032" xil_pn:in_ck="5985190010497544323" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1541523031">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="../SourceFiles/CRTClock2018Template.v"/>
+      <outfile xil_pn:name="../SourceFiles/CRTClock2018fall_tb.v"/>
+      <outfile xil_pn:name="../SourceFiles/CRTcontroller2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/CRTcontrollerr2018fall_tb.v"/>
+      <outfile xil_pn:name="../SourceFiles/ClockedNegativeOneShot.v"/>
+      <outfile xil_pn:name="../SourceFiles/ClockedOneShot.v"/>
+      <outfile xil_pn:name="../SourceFiles/ClockedPositiveOneShot.v"/>
+      <outfile xil_pn:name="../SourceFiles/DelayLoop.v"/>
+      <outfile xil_pn:name="../SourceFiles/InputModule.v"/>
+      <outfile xil_pn:name="../SourceFiles/MusicScore.v"/>
+      <outfile xil_pn:name="../SourceFiles/NoteMap.v"/>
+      <outfile xil_pn:name="../SourceFiles/OneSecElapseTime.v"/>
+      <outfile xil_pn:name="../SourceFiles/PlayNote2.v"/>
+      <outfile xil_pn:name="../SourceFiles/PlaySound.v"/>
+      <outfile xil_pn:name="../SourceFiles/PongGame2018fall_LP_MK.v"/>
+      <outfile xil_pn:name="../SourceFiles/Pulse1second.v"/>
+      <outfile xil_pn:name="../SourceFiles/SheetReader.v"/>
+      <outfile xil_pn:name="../SourceFiles/ThreeMusicNotes.v"/>
+      <outfile xil_pn:name="../SourceFiles/UniversalCounter10bitsV5.v"/>
+      <outfile xil_pn:name="../SourceFiles/VGA7SegDisplay.v"/>
+      <outfile xil_pn:name="../SourceFiles/WaveForm.v"/>
+      <outfile xil_pn:name="../SourceFiles/debouncer.v"/>
+      <outfile xil_pn:name="../SourceFiles/game_module2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/hsyncModule2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/hsyncModule2018fall_tb.v"/>
+      <outfile xil_pn:name="../SourceFiles/vsyncModule2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/vsyncModule2018fall_tb.v"/>
     </transform>
     <transform xil_pn:end_ts="1540928966" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3356335980672263459" xil_pn:start_ts="1540928966">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -148,45 +168,53 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1540925116" xil_pn:in_ck="4714684431915413735" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-375684802594722616" xil_pn:start_ts="1540925116">
+    <transform xil_pn:end_ts="1541523032" xil_pn:in_ck="-535375788555589497" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-375684802594722616" xil_pn:start_ts="1541523032">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1540928966" xil_pn:in_ck="-1893125989989297122" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1540928966">
+    <transform xil_pn:end_ts="1541523032" xil_pn:in_ck="5985190010497544323" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1541523032">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="../SourceFiles/CRTClock2018Template.v"/>
+      <outfile xil_pn:name="../SourceFiles/CRTClock2018fall_tb.v"/>
+      <outfile xil_pn:name="../SourceFiles/CRTcontroller2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/CRTcontrollerr2018fall_tb.v"/>
+      <outfile xil_pn:name="../SourceFiles/ClockedNegativeOneShot.v"/>
+      <outfile xil_pn:name="../SourceFiles/ClockedOneShot.v"/>
+      <outfile xil_pn:name="../SourceFiles/ClockedPositiveOneShot.v"/>
+      <outfile xil_pn:name="../SourceFiles/DelayLoop.v"/>
+      <outfile xil_pn:name="../SourceFiles/InputModule.v"/>
+      <outfile xil_pn:name="../SourceFiles/MusicScore.v"/>
+      <outfile xil_pn:name="../SourceFiles/NoteMap.v"/>
+      <outfile xil_pn:name="../SourceFiles/OneSecElapseTime.v"/>
+      <outfile xil_pn:name="../SourceFiles/PlayNote2.v"/>
+      <outfile xil_pn:name="../SourceFiles/PlaySound.v"/>
+      <outfile xil_pn:name="../SourceFiles/PongGame2018fall_LP_MK.v"/>
+      <outfile xil_pn:name="../SourceFiles/Pulse1second.v"/>
+      <outfile xil_pn:name="../SourceFiles/SheetReader.v"/>
+      <outfile xil_pn:name="../SourceFiles/ThreeMusicNotes.v"/>
+      <outfile xil_pn:name="../SourceFiles/UniversalCounter10bitsV5.v"/>
+      <outfile xil_pn:name="../SourceFiles/VGA7SegDisplay.v"/>
+      <outfile xil_pn:name="../SourceFiles/WaveForm.v"/>
+      <outfile xil_pn:name="../SourceFiles/debouncer.v"/>
+      <outfile xil_pn:name="../SourceFiles/game_module2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/hsyncModule2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/hsyncModule2018fall_tb.v"/>
+      <outfile xil_pn:name="../SourceFiles/vsyncModule2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/vsyncModule2018fall_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1540928969" xil_pn:in_ck="-5688042232890149679" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1227599359032479045" xil_pn:start_ts="1540928966">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1541523034" xil_pn:in_ck="7689526656523149494" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1227599359032479045" xil_pn:start_ts="1541523032">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1540928969" xil_pn:in_ck="333302250039968831" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7901784361293655864" xil_pn:start_ts="1540928969">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutOfDateForced"/>
       <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1540843053" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1540843053">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -279,19 +307,21 @@
     <transform xil_pn:end_ts="1541190017" xil_pn:in_ck="-6686926255659693730" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1541189997">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="PongGame2018fall_JJS_JJS.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="ponggame2018fall_jjs_jjs.bgn"/>
       <outfile xil_pn:name="ponggame2018fall_jjs_jjs.bit"/>
       <outfile xil_pn:name="ponggame2018fall_jjs_jjs.drc"/>
       <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
     <transform xil_pn:end_ts="1541126421" xil_pn:in_ck="7871516833447365234" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1541126414">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1541189997" xil_pn:in_ck="267496090147546535" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1541189992">

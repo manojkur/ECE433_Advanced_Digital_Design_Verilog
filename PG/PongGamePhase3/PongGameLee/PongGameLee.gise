@@ -21,8 +21,109 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="PongGameLee.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CRTClock2018fall_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="CRTClock2018fall_tb_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vsyncModule2018fall_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1541522877" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1541522877">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1541522877" xil_pn:in_ck="-253338394942731602" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1541522877">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../SourceFiles/CRTClock2018Template.v"/>
+      <outfile xil_pn:name="../SourceFiles/CRTClock2018fall_tb.v"/>
+      <outfile xil_pn:name="../SourceFiles/CRTcontroller2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/CRTcontrollerr2018fall_tb.v"/>
+      <outfile xil_pn:name="../SourceFiles/ClockedNegativeOneShot.v"/>
+      <outfile xil_pn:name="../SourceFiles/ClockedOneShot.v"/>
+      <outfile xil_pn:name="../SourceFiles/ClockedPositiveOneShot.v"/>
+      <outfile xil_pn:name="../SourceFiles/DelayLoop.v"/>
+      <outfile xil_pn:name="../SourceFiles/InputModule.v"/>
+      <outfile xil_pn:name="../SourceFiles/MusicScore.v"/>
+      <outfile xil_pn:name="../SourceFiles/NoteMap.v"/>
+      <outfile xil_pn:name="../SourceFiles/OneSecElapseTime.v"/>
+      <outfile xil_pn:name="../SourceFiles/OriginalPong.v"/>
+      <outfile xil_pn:name="../SourceFiles/PlayNote2.v"/>
+      <outfile xil_pn:name="../SourceFiles/PlaySound.v"/>
+      <outfile xil_pn:name="../SourceFiles/PongGame2018fall_LP_MK.v"/>
+      <outfile xil_pn:name="../SourceFiles/Pulse1second.v"/>
+      <outfile xil_pn:name="../SourceFiles/SheetReader.v"/>
+      <outfile xil_pn:name="../SourceFiles/ThreeMusicNotes.v"/>
+      <outfile xil_pn:name="../SourceFiles/UniversalCounter10bitsV5.v"/>
+      <outfile xil_pn:name="../SourceFiles/VGA7SegDisplay.v"/>
+      <outfile xil_pn:name="../SourceFiles/WaveForm.v"/>
+      <outfile xil_pn:name="../SourceFiles/debouncer.v"/>
+      <outfile xil_pn:name="../SourceFiles/game_module2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/hsyncModule2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/hsyncModule2018fall_tb.v"/>
+      <outfile xil_pn:name="../SourceFiles/vsyncModule2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/vsyncModule2018fall_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1541522942" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3356335980672263459" xil_pn:start_ts="1541522942">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1541522942" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3251122295606664479" xil_pn:start_ts="1541522942">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1541522877" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="747218636693016251" xil_pn:start_ts="1541522877">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1541522877" xil_pn:in_ck="-253338394942731602" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1541522877">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../SourceFiles/CRTClock2018Template.v"/>
+      <outfile xil_pn:name="../SourceFiles/CRTClock2018fall_tb.v"/>
+      <outfile xil_pn:name="../SourceFiles/CRTcontroller2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/CRTcontrollerr2018fall_tb.v"/>
+      <outfile xil_pn:name="../SourceFiles/ClockedNegativeOneShot.v"/>
+      <outfile xil_pn:name="../SourceFiles/ClockedOneShot.v"/>
+      <outfile xil_pn:name="../SourceFiles/ClockedPositiveOneShot.v"/>
+      <outfile xil_pn:name="../SourceFiles/DelayLoop.v"/>
+      <outfile xil_pn:name="../SourceFiles/InputModule.v"/>
+      <outfile xil_pn:name="../SourceFiles/MusicScore.v"/>
+      <outfile xil_pn:name="../SourceFiles/NoteMap.v"/>
+      <outfile xil_pn:name="../SourceFiles/OneSecElapseTime.v"/>
+      <outfile xil_pn:name="../SourceFiles/OriginalPong.v"/>
+      <outfile xil_pn:name="../SourceFiles/PlayNote2.v"/>
+      <outfile xil_pn:name="../SourceFiles/PlaySound.v"/>
+      <outfile xil_pn:name="../SourceFiles/PongGame2018fall_LP_MK.v"/>
+      <outfile xil_pn:name="../SourceFiles/Pulse1second.v"/>
+      <outfile xil_pn:name="../SourceFiles/SheetReader.v"/>
+      <outfile xil_pn:name="../SourceFiles/ThreeMusicNotes.v"/>
+      <outfile xil_pn:name="../SourceFiles/UniversalCounter10bitsV5.v"/>
+      <outfile xil_pn:name="../SourceFiles/VGA7SegDisplay.v"/>
+      <outfile xil_pn:name="../SourceFiles/WaveForm.v"/>
+      <outfile xil_pn:name="../SourceFiles/debouncer.v"/>
+      <outfile xil_pn:name="../SourceFiles/game_module2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/hsyncModule2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/hsyncModule2018fall_tb.v"/>
+      <outfile xil_pn:name="../SourceFiles/vsyncModule2018fall.v"/>
+      <outfile xil_pn:name="../SourceFiles/vsyncModule2018fall_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1541522945" xil_pn:in_ck="-253338394942731602" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1227599359032479045" xil_pn:start_ts="1541522942">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1541522842" xil_pn:in_ck="7071386200652141315" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8398324219907768392" xil_pn:start_ts="1541522842">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForced"/>
+      <outfile xil_pn:name="CRTClock2018fall_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+  </transforms>
 
 </generated_project>
