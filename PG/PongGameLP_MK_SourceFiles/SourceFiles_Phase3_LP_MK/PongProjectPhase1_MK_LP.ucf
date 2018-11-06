@@ -1,0 +1,22 @@
+### Nexys3 Clock Oscillator:
+# CLK - 100MHz oscillator
+NET "Clock" LOC = V10;
+NET "rota1" LOC = P11;//JA4
+NET "rotb1" LOC = N10;//JA3
+NET "rota2" LOC = E11;//JD4
+NET "rotb2" LOC = F11;//JD3
+NET "PlaySound" LOC = C4;
+NET "green[1]" LOC = P8;
+NET "green[2]" LOC = T6;
+NET "green[3]" LOC = V6;
+NET "red[1]" LOC = U7;
+NET "red[2]" LOC = V7;
+NET "red[3]" LOC = N7;
+NET "blue[2]" LOC = R7;
+NET "blue[3]" LOC = T7;
+NET "hsync" LOC = N6;
+NET "vsync" LOC = P7;
+NET "Speaker" LOC = L3;//JB4
+NET "Speaker" IOSTANDARD = LVCMOS33;
+
+NET "Reset" LOC = C9; //BTND
